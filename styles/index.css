@@ -2,6 +2,10 @@
 *{
     box-sizing: border-box;
 }
+
+ul{
+    list-style: none;
+}
 body
 {
     margin: auto;
@@ -118,6 +122,33 @@ main{
     align-items: center;
     text-align: center;
 
+}
+
+footer{
+    margin-top: 50px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+footer section nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#copyright{
+    border: 2px solid black;
+    align-items:flex-end;
+    display: flex;
+
+}
+
+
+
+footer nav{
+    display: flex;
+    flex-direction: column;
 }
 /*
 .center{
