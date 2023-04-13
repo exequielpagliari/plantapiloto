@@ -244,10 +244,10 @@ footer nav{
 }
 
 
-@media (min-width: 720px){
+/*@media (min-width: 720px){
     header {
         /*position: fixed;
-        width: 100%;*/
+        width: 100%;
     }
     header .container{
         flex-direction: row;
