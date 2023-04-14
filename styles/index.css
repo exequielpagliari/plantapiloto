@@ -127,6 +127,7 @@ main{
 footer{
     margin-top: 50px;
     height: 250px;
+    
 }
 
 
@@ -134,12 +135,16 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
 footer nav{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-weight: bold;
+    color: black;
+    font-size: 1.40em;
 }
 
 
@@ -161,10 +166,7 @@ text-align: center;
 
 
 @media (min-width: 720px){
-    header {
-        /*position: fixed;
-        width: 100%;*/
-    }
+
     header .container{
         flex-direction: row;
         justify-content: space-between;
