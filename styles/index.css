@@ -6,6 +6,7 @@
 ul{
     list-style: none;
 }
+
 body
 {
     margin: auto;
@@ -142,17 +143,30 @@ footer nav{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-weight: bold;
+    /*font-weight: bold;
     color: black;
-    font-size: 1.40em;
+    font-size: 1.40em;*/
+
+}
+
+footer nav a{
+    text-decoration: none;
+    color: black;
+}
+
+footer nav a:hover{
+    color: brown
+
+}
+
+footer nav a:focus{
+    color: brown
 }
 
 
 
-
-
 #copyright{
-
+margin-top: 20px;
 text-align: center;
 
 }
