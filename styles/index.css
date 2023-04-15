@@ -141,15 +141,29 @@ footer{
 
 
 #footer_info{
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     
 }
 
-footer nav{
+footer section{
+
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer section p{
+
+    margin: 0;
+}
+
+footer nav{
+    
+    display: flex;
+    justify-content: space-evenly;
     /*font-weight: bold;
     color: black;
     font-size: 1.40em;*/
@@ -157,18 +171,30 @@ footer nav{
 }
 
 #footer_links{
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
 }
 
+footer section ul{
+    padding: 0;
+}
+
+
 footer nav a{
+
     text-decoration: none;
     color: black;
 }
 
+footer nav a .rrss{
+    margin-top: 25px;
+}
+
 i{
+
     font-size: 1.5rem;
 }
 
