@@ -72,11 +72,12 @@ main{
 }
 
 .carousel-caption{
-    background-color: rgba(165, 42, 42, .25) !important;
+    background-color: rgba(165, 42, 42, .35) !important;
 }
 
 div p {
     text-align: center;
+    -webkit-text-stroke: .2px black;
 }
 
 .grande{
