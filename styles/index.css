@@ -72,7 +72,7 @@ main{
 }
 
 .carousel-caption{
-    background-color: rgba(165, 42, 42, .25);
+    background-color: rgba(165, 42, 42, .25) !important;
 }
 
 div p {
