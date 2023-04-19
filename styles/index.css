@@ -71,12 +71,15 @@ main{
 
 }
 
+<<<<<<< HEAD
 .slide img{
     height: 65vh;
     width: auto;
     object-fit:cover;
 }
 
+=======
+>>>>>>> 7640ab9257cdddbd21d10b97686c1d5cf310c884
 .carousel-caption{
     background-color: rgba(165, 42, 42, .35) !important;
 }
@@ -91,7 +94,10 @@ div p {
     -webkit-text-stroke: .2px black;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7640ab9257cdddbd21d10b97686c1d5cf310c884
 .grande{
     display: flex;
 
