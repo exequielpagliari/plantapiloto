@@ -2,8 +2,11 @@
     background-color: rgba(240, 248, 255, 0.763);
     margin: 0;
 }
+/*
 header{
+
 }
+*/
 #head_icon{
     display: flex;
     flex-direction: row;
