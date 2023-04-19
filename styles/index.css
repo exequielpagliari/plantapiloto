@@ -71,6 +71,27 @@ main{
 
 }
 
+.slide img{
+    height: 65vh;
+    width: auto;
+    object-fit:cover;
+}
+
+.carousel-caption{
+    background-color: rgba(165, 42, 42, .35) !important;
+}
+
+div h5{
+    text-align: center;
+    -webkit-text-stroke: .2px black;
+}
+
+div p {
+    text-align: center;
+    -webkit-text-stroke: .2px black;
+}
+
+
 .grande{
     display: flex;
 
@@ -133,25 +154,61 @@ footer{
 
 
 #footer_info{
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     
 }
 
-footer nav{
+footer section{
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
+}
+
+footer section p{
+
+    margin: 0;
+}
+
+footer nav{
+    
+    display: flex;
+    justify-content: space-evenly;
     /*font-weight: bold;
     color: black;
     font-size: 1.40em;*/
 
 }
 
+#footer_links{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+footer section ul{
+    padding: 0;
+}
+
+
 footer nav a{
+
     text-decoration: none;
     color: black;
+}
+
+footer nav a .rrss{
+    margin-top: 25px;
+}
+
+i{
+
+    font-size: 1.5rem;
 }
 
 footer nav a:hover{
@@ -230,3 +287,6 @@ text-align: center;
     }
     
 }
+
+
+
