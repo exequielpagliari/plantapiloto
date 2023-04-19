@@ -72,6 +72,11 @@ main{
 }
 
 
+div a{
+    text-decoration: none;
+    color: white;
+}
+
 .slide img{
     height: 65vh;
     width: auto;
