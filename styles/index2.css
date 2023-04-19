@@ -1,0 +1,238 @@
+*{
+    background-color: rgba(240, 248, 255, 0.763);
+    margin: 0;
+}
+header{
+}
+#head_icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.5rem;
+}
+#head_icon_face{
+font-size: 2rem;
+color: brown;
+}
+
+#head_icon_face:hover{
+color: rgb(106, 18, 18);
+}
+
+#head_icon_linkedin{
+    font-size: 2rem;
+    color: brown;
+    }
+    
+    #head_icon_linkedin:hover{
+    color: rgb(106, 18, 18);
+    }
+#head_title2{
+    font-size: 1rem;
+}
+
+.container{
+   padding: 0;
+    text-align: center;
+}
+
+#head_menu{
+    background-color: rgb(179, 17, 17);
+}
+#head_menu a{
+    background-color: transparent;
+    font-weight: bold;
+    padding: 0.3rem;
+    color: aliceblue;
+}
+
+.title{
+   text-align: center;
+   margin: 2rem;
+}
+
+.imagen{
+background-image: url(../IMG/piloto-head.jpg);
+background-size: cover;
+height: 15rem;
+}
+
+.text_one{
+    text-align: center;
+    margin: 1rem;
+ 
+}
+#subs{
+    margin: auto;
+}
+#sub1{
+   text-align: center;
+   margin-top: 1rem;
+}
+
+h4 #sub{
+    text-align: center;
+   
+}
+#sub1{
+    
+    font-size: 1rem;
+}
+.sub2{
+    
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+ul{
+    text-align: left;
+}
+.listas{
+
+    margin: auto;
+
+}
+.listas2{
+
+    text-align:left;
+}
+.title_red{
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.contenido p{
+    text-align: center;
+    font-size: 1rem;
+}
+#colabo{
+    margin: 1rem;
+}
+
+.contenedor_2{
+  
+    display: flex;
+    flex-direction: row;
+
+     height: 10rem;
+    background-image: url(../IMG/donacion4.jpg);
+    background-size: cover;
+    justify-content: center;
+}
+.contenedor_3{
+
+    display: flex;
+    flex-direction: row;
+     height: 10rem;
+    background-image: url(../IMG/donacion3.jpg);
+    background-size: cover;
+    justify-content: center;
+}
+.contenedor_4{
+  
+    display: flex;
+    flex-direction: row;
+     height: 10rem;
+    background-image: url(../IMG/donacion2.jpg);
+    background-size: cover;
+    align-items: center;
+}
+.contenedor_5{
+   
+    display: flex;
+    flex-direction: row;
+     height: 10rem;
+    background-image: url(../IMG/donacion1.jpg);
+    background-size: cover;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+    background-size: 0.5rem;
+
+}
+#carouselExample{
+    height: 100%;
+     width: 340px;
+    display: flex;
+    margin: auto;
+}
+#carouselExample2{
+    height: 100%;
+    width: 340px;
+   display: flex;
+   margin: auto;
+}
+.carousel-inner{
+
+text-align: center;
+}
+footer{
+
+    background-color: rgb(206, 192, 192);
+    color:red;
+    font-weight: bold;
+    height: 2.5rem;
+    text-align: center;
+   
+}
+
+footer p{
+
+    background-color: transparent;
+    font-weight: bold;
+    font-size:1.2rem;
+}
+
+#carouselExampleIndicators{
+    width: 500px;
+    margin: auto;
+}
+@media screen and (min-width:720px){
+    .imagen{
+        background-image: url(../IMG/piloto-head.jpg);
+        background-size: cover;
+        height: 35rem;
+        margin-left: 60px;
+        margin-right: 60px; }
+     #head_icon{
+        display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+        padding: 0;}
+
+        #subs{
+            text-align: center;
+            font-weight: bold;
+        }
+         .listas{
+         
+             width: 40rem;
+            list-style-position: outside;
+    
+
+     }
+     .listas2{
+     text-align: center;
+     list-style-type: none;
+     }
+        #carouselExample{
+            height: 100%;
+             width: 340px;
+             margin: auto;
+        }
+        #carouselExample2{
+            height: 100%;
+            width: 500px;
+           display: flex;
+           margin: auto;
+        }
+}
+@media screen and (min-width:1100px){
+    #carouselExample{
+        height: 100%;
+         width: 340px;
+         margin: auto;
+    }
+}
