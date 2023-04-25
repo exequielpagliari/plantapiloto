@@ -2,11 +2,12 @@
     background-color: rgba(240, 248, 255, 0.763);
     margin: 0;
 }
-/*
-header{
 
+header{
+    text-align: center;
+    
 }
-*/
+
 #head_icon{
     display: flex;
     flex-direction: row;
@@ -17,7 +18,29 @@ header{
 font-size: 2rem;
 color: brown;
 }
-
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ header .nav{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     padding-bottom: 5px;
+    
+ }
+ header a{
+ padding: 5px;
+     text-decoration: none;
+     font-weight: bold;
+     color: black;
+   
+ }
+ header a:hover{
+     color:blueviolet;
+ }
+ 
 #head_icon_face:hover{
 color: rgb(106, 18, 18);
 }
@@ -33,7 +56,18 @@ color: rgb(106, 18, 18);
 #head_title2{
     font-size: 1rem;
 }
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.40em;
+}
 
+header .logo img{
+    height: 100px;
+    width: 100px;
+}
 .container{
    padding: 0;
     text-align: center;
