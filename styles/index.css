@@ -35,6 +35,11 @@ header .logo{
     font-size: 1.40em;
 }
 
+header .logo img{
+    height: 100px;
+    width: 100px;
+}
+
 header .container{
     display: flex;
     flex-direction: column;
@@ -78,13 +83,18 @@ div a{
 }
 
 .slide img{
-    height: 65vh;
+    height: 80vh;
     width: auto;
     object-fit:cover;
 }
 
 .carousel-caption{
     background-color: rgba(165, 42, 42, 0.5) !important;
+    border-radius: 5px;
+}
+
+.carousel-caption p{
+    text-align: center;
 }
 
 div h5{
