@@ -6,19 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capacitación a distancia</title>
     <link rel="stylesheet" href="./styles/capacitacion.css">
-    <link rel="icon" type="image/x-icon" href="./img/progranos-cuadrado-transp.png">
-
+    <link rel="icon" type="image/x-icon" href="./img/progranos-cuadrado.jpg">
+    
+    <!-- JS para el acordeón-->
+    <script> 
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
 </head>
+
 <body>
      <header>           
         <nav class="navbar">
             <a href="#" class="logo">
-              <img src="./img/progranos-cuadrado-transp.png" alt="Pro-Granos logo"
+              <img src="./img/progranos-cuadrado.jpg" alt="Pro-Granos logo"
               width="120" height="120">
             </a>
             <ul class="nav-links">
-              <li class="nav-item"><a href="./index.html">Home</a></li>
-              <li class="nav-item"><a href="./plantapiloto.html">Planta Piloto</a></li>
+              <li class="nav-item"><a href="#">Home</a></li>
+              <li class="nav-item"><a href="#">Planta Piloto</a></li>
               <li class="nav-item"><a href="#">Capacitación a distancia</a></li>
               <li class="nav-item"><a href="#">Contacto</a></li>
             </ul>
@@ -33,36 +51,37 @@
             <h2>Catálogo de cursos</h2>
                        
               <section class="flex-container">
+
                 <article class = "card">
-                  <img src="#" alt="Intro a la poscosecha">
+                  <img src="./img/introposco.png" alt="Intro a la poscosecha">
                     <h3>Introducción a la poscosecha</h3>
                       <p>Inicio: marzo 2023</p>
                         <button><a href="#">+ Info</a></button>
                 </article>
                 
                 <article class="card">
-                  <img src="#" alt="Aireación">
+                  <img src="./img/aireacion.png" alt="Aireación">
                     <h3>Aireación de granos</h3>
                       <p>Inicio: abril 2023</p>
                         <button><a href="#">+ Info</a></button>
                 </article>
     
                 <article class="card">
-                  <img src="#" alt="Control de plagas">
+                  <img src="./img/insectos.png" alt="Control de plagas">
                     <h3>Control de plagas e inocuidad</h3>
                       <p>Inicio: mayo 2023.</p>
                         <button><a href="#">+ Info</a></button>
                 </article>
                 
                 <article class="card">
-                  <img src="#" alt="Poscosecha de semillas">
+                  <img src="./img/semillas.png" alt="Poscosecha de semillas">
                     <h3>Poscosecha de semillas</h3>
                       <p>Inicio: agosto 2023.</p>
                         <button><a href="#">+ Info</a></button>
                 </article>
     
                 <article class="card">
-                  <img src="#" alt="Almacenamiento en silobolsa">
+                  <img src="./img/silobolsa.png" alt="Almacenamiento en silobolsa">
                     <h3>Almacenamiento en silobolsa</h3>
                       <p>Inicio: agosto 2023.</p>
                         <button><a href="#">+ Info</a></button>
@@ -114,20 +133,3 @@
         
 </body>
 </html>
-
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-  </script>
