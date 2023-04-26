@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 
 ul{
@@ -14,55 +15,52 @@ body
     background-color: white;
 }
 
-.container{
-    max-width: 1300px;
-    margin: auto;
 
-
-}
 
 header{
     background-color: rgb(240, 240, 240);
     z-index: 20;
     margin-top: 0;
-}
-
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: black;
-    font-size: 1.40em;
-}
-
-header .logo img{
-    height: 100px;
-    width: 100px;
-}
-
-header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-header nav{
+  
+  }
+  
+  header .logo{
+    margin: 0;
+    padding: 25px 30px;
+  
+  }
+  
+  header .logo img{
+    height: 100px;
+    width: 100px;
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header nav{
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
-}
-
-header a{
+  }
+  
+  header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
-}
-
-header a:hover{ 
+  }
+  
+  header a:hover{ 
     color: rgb(165, 42, 42);
-}
+  }
 
 main{
     margin-top: 0%;
@@ -253,17 +251,16 @@ text-align: center;
 
 @media (min-width: 720px){
 
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
     #quienessomos .container{
         display: flex;
         justify-content: space-evenly;
