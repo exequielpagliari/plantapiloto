@@ -3,86 +3,54 @@
     margin: 0;
 }
 
-header{
-    text-align: center;
-    
-}
+/* Header */
 
-#head_icon{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0.5rem;
-}
-#head_icon_face{
-font-size: 2rem;
-color: brown;
-}
-header .container{
+
+header {
+    background-color: rgb(240, 240, 240);
+    z-index: 20;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
- }
- header .nav{
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-     padding-bottom: 5px;
-    
- }
- header a{
- padding: 5px;
-     text-decoration: none;
-     font-weight: bold;
-     color: black;
-   
- }
- header a:hover{
-     color:blueviolet;
- }
- 
-#head_icon_face:hover{
-color: rgb(106, 18, 18);
-}
-
-#head_icon_linkedin{
-    font-size: 2rem;
-    color: brown;
-    }
-    
-    #head_icon_linkedin:hover{
-    color: rgb(106, 18, 18);
-    }
-#head_title2{
-    font-size: 1rem;
-}
-header .logo{
+  
+  }
+  
+  header .logo {
     margin: 0;
     padding: 25px 30px;
-    font-weight: bold;
-    color: black;
-    font-size: 1.40em;
-}
-
-header .logo img{
+  
+  }
+  
+  header .logo img {
     height: 100px;
     width: 100px;
-}
-.container{
-   padding: 0;
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-}
-
-#head_menu{
-    background-color: rgb(179, 17, 17);
-}
-#head_menu a{
-    background-color: transparent;
+    padding-bottom: 25px;
+  }
+  
+  header a {
+    padding: 5px 12px;
+    text-decoration: none;
     font-weight: bold;
-    padding: 0.3rem;
-    color: aliceblue;
-}
-
+    color: black;
+  }
+  
+  header a:hover {
+    color: rgb(165, 42, 42);
+  }
+  
 .title{
    text-align: center;
    margin: 2rem;
@@ -205,71 +173,196 @@ img{
 
 text-align: center;
 }
-footer{
 
-    background-color: rgb(206, 192, 192);
-    color:red;
-    font-weight: bold;
-    height: 2.5rem;
+
+/*        Footer            */
+
+#quienessomos {
+    background-color: rgb(240, 240, 240);
+  
+  }
+  
+  #quienessomos .container {
     text-align: center;
-   
-}
-
-footer p{
-
-    background-color: transparent;
-    font-weight: bold;
-    font-size:1.2rem;
-}
+    padding: 200px 12px;
+  }
+  
+  #contactar .container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+  }
+  
+  footer {
+    margin-top: 50px;
+    height: 250px;
+  
+  }
+  
+  
+  #footer_info {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+  }
+  
+  footer section {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  footer section p {
+  
+    margin: 0;
+  }
+  
+  footer nav {
+  
+    display: flex;
+    justify-content: space-evenly;
+    /*font-weight: bold;
+      color: black;
+      font-size: 1.40em;*/
+  
+  }
+  
+  #footer_links {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+  }
+  
+  footer section ul {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  
+  
+  footer nav a {
+  
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer nav a .rrss {
+    margin-top: 25px;
+  }
+  
+  i {
+  
+    font-size: 1.5rem;
+  }
+  
+  footer nav a:hover {
+    color: brown
+  }
+  
+  footer nav a:focus {
+    color: brown
+  }
+  
+  
+  
+  #copyright p {
+    margin-top: 20px;
+    text-align: center;
+  
+  }
 
 #carouselExampleIndicators{
     width: 500px;
     margin: auto;
 }
-@media screen and (min-width:720px){
-    .imagen{
-        background-image: url(../IMG/piloto-head.jpg);
-        background-size: cover;
-        height: 35rem;
-        margin-left: 60px;
-        margin-right: 60px; }
-     #head_icon{
-        display: flex;
-         flex-direction: row;
-         justify-content: space-evenly;
-        padding: 0;}
 
-        #subs{
-            text-align: center;
-            font-weight: bold;
-        }
-         .listas{
-         
-             width: 40rem;
-            list-style-position: outside;
-    
+@media screen and (min-width:720px) {
 
-     }
-     .listas2{
-     text-align: center;
-     list-style-type: none;
-     }
-        #carouselExample{
-            height: 100%;
-             width: 340px;
-             margin: auto;
-        }
-        #carouselExample2{
-            height: 100%;
-            width: 500px;
-           display: flex;
-           margin: auto;
-        }
-}
-@media screen and (min-width:1100px){
-    #carouselExample{
-        height: 100%;
-         width: 340px;
-         margin: auto;
+    header {
+      flex-direction: row;
+      justify-content: space-around;
     }
-}
+  
+    header nav {
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px;
+    }
+  
+    .imagen {
+      background-image: url(../img/piloto-head.jpg);
+      background-size: cover;
+      height: 35rem;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+  
+    #head_icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 0;
+    }
+  
+    #subs {
+      text-align: center;
+      font-weight: bold;
+    }
+  
+    .listas {
+  
+      width: 40rem;
+      list-style-position: outside;
+  
+  
+    }
+  
+    .listas2 {
+      text-align: center;
+      list-style-type: none;
+    }
+  
+    #carouselExample {
+      height: 100%;
+      width: 340px;
+      margin: auto;
+    }
+  
+    #carouselExample2 {
+      height: 100%;
+      width: 500px;
+      display: flex;
+      margin: auto;
+    }
+  }
+  
+  @media screen and (min-width:1100px) {
+    #carouselExample {
+      height: 100%;
+      width: 340px;
+      margin: auto;
+    }
+  }
+  
+  
+  /* Ajuste de Pantalla menor a 720px */
+  
+  
+  @media screen and (min-width:424px) {
+    header ul {
+      column-gap: 1rem;
+  
+    }
+  
+  
+  
+  }
