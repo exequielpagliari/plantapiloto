@@ -6,6 +6,7 @@
 ul{
     list-style: none;
 }
+
 body
 {
     margin: auto;
@@ -34,6 +35,11 @@ header .logo{
     font-size: 1.40em;
 }
 
+header .logo img{
+    height: 100px;
+    width: 100px;
+}
+
 header .container{
     display: flex;
     flex-direction: column;
@@ -55,7 +61,7 @@ header a{
 }
 
 header a:hover{ 
-    color: brown;
+    color: rgb(165, 42, 42);
 }
 
 main{
@@ -68,6 +74,37 @@ main{
 
 
 
+}
+
+
+div a{
+    text-decoration: none;
+    color: white;
+}
+
+.slide img{
+    height: 80vh;
+    width: auto;
+    object-fit:cover;
+}
+
+.carousel-caption{
+    background-color: rgba(165, 42, 42, 0.5) !important;
+    border-radius: 5px;
+}
+
+.carousel-caption p{
+    text-align: center;
+}
+
+div h5{
+    text-align: center;
+    -webkit-text-stroke: .2px black;
+}
+
+div p {
+    text-align: center;
+    -webkit-text-stroke: .2px black;
 }
 
 .grande{
@@ -132,27 +169,76 @@ footer{
 
 
 #footer_info{
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     
 }
 
+footer section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer section p{
+
+    margin: 0;
+}
+
 footer nav{
+    
+    display: flex;
+    justify-content: space-evenly;
+    /*font-weight: bold;
+    color: black;
+    font-size: 1.40em;*/
+
+}
+
+#footer_links{
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-weight: bold;
+
+}
+
+footer section ul{
+    padding: 0;
+}
+
+
+footer nav a{
+
+    text-decoration: none;
     color: black;
-    font-size: 1.40em;
+}
+
+footer nav a .rrss{
+    margin-top: 25px;
+}
+
+i{
+
+    font-size: 1.5rem;
+}
+
+footer nav a:hover{
+    color: brown
+
+}
+
+footer nav a:focus{
+    color: brown
 }
 
 
 
-
-
 #copyright{
-
+margin-top: 20px;
 text-align: center;
 
 }
@@ -216,3 +302,6 @@ text-align: center;
     }
     
 }
+
+
+
