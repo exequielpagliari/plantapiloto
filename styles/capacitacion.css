@@ -53,9 +53,6 @@ header a:hover{
   color: rgb(165, 42, 42);
 }
 
-
-
-
 /* Formato de Título principal*/
 
 #page_title {
@@ -114,11 +111,13 @@ p {
 
 .card {
   background-color: #f1f1f1;
-  flex: 0 1 30%;
+  flex: 0 1 35%;
   margin: 10px auto;
+  /*aspect-ratio: 4/3;*/
   padding: 0px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  border-radius: 0.5rem;
   }
 
  .card img {
@@ -126,11 +125,25 @@ p {
     border: 0;
     width: 100%;
     height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
   }
 
-         
+  .card h5 {
+    color: #242527;
+    padding: 0.5rem;
+  }
+
+.card p {
+    color: #242527;
+    padding: 0 0 0.5rem 0.5rem;
+    text-align: justify;
+    margin:0;
+  }        
+
 .card:hover { 
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+ 
 }
 
 /* Preguntas Frecuentes*/
@@ -146,7 +159,8 @@ p {
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.4s;    
+  transition: 0.4s; 
+     
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -166,7 +180,7 @@ p {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: #777;
-  float: right;
+  float: center;
   margin-left: 5px;
 }
 
