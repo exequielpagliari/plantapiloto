@@ -146,48 +146,36 @@ p {
  
 }
 
-/* Preguntas Frecuentes*/
-
-/* Botones para abrir y cerrar el acordeón*/
+/*Acordeón*/
 
 .accordion {
-  background-color: rgb(190 154 40);
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 50%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s; 
-     
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto; 
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: center;
-  margin-left: 5px;
+.panel-header {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
+.panel-content {
+  padding: 0px;
+  font-size: 1.1em;
+  line-height: 1.5;
+  }
 
 /*        Footer            */
 
