@@ -118,6 +118,8 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   transition: 0.3s;
   border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
   }
 
  .card img {
@@ -160,6 +162,8 @@ p {
   }
 }*/
 
+/*Botón de inscricpción*/
+
 .boton-inscripcion {
   display: block; /* Mostrar como bloque */
   margin: 2rem auto; /* Establecer margen automático en los lados */
@@ -172,6 +176,42 @@ p {
   text-decoration: none; /* Quitar subrayado del texto */
   font-size: 20px; /* Tamaño de fuente */
   cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+/*Ribbons*/
+
+.ribbon-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+}
+
+#ribbon-finalizado {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  background-color: #f00;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 40px;
+  transform: rotate(-40deg);
+  z-index: 1;
+}
+
+#ribbon-abierto {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  background-color: yellow;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 5px 40px;
+  transform: rotate(-40deg);
+  z-index: 1;
 }
 
 /*Acordeón*/
