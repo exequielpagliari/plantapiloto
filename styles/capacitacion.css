@@ -160,6 +160,20 @@ p {
   }
 }*/
 
+.boton-inscripcion {
+  display: block; /* Mostrar como bloque */
+  margin: 2rem auto; /* Establecer margen automático en los lados */
+  background-color: #038C5A; /* Color de fondo */
+  border: none; /* Borde sin estilo */
+  border-radius: 0.5rem; 
+  color: white; /* Color del texto */
+  padding: 15px 32px; /* Espaciado alrededor del texto */
+  text-align: center; /* Centrar el texto */
+  text-decoration: none; /* Quitar subrayado del texto */
+  font-size: 20px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
 /*Acordeón*/
 
 .accordion {
