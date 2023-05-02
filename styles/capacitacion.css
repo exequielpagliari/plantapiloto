@@ -9,30 +9,22 @@
 /*Barra de navegación*/
 
 header{
-  background-color: rgb(240, 240, 240);
+  background-color: white;
   z-index: 20;
   margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-}
+  }
 
 header .logo{
   margin: 0;
-  padding: 25px 30px;
-
+  padding: 20px 20px;
 }
 
 header .logo img{
   height: 100px;
   width: 100px;
-}
-
-header nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 header nav{
@@ -46,59 +38,65 @@ header a{
   padding: 5px 12px;
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  text-transform: uppercase;
+  color:#1B8CA6;
 }
 
 header a:hover{ 
-  color: rgb(165, 42, 42);
+  /*background-color: #038C5A;*/
+  color: #038C5A;
+  text-decoration: underline;
 }
-
-
-
 
 /* Formato de Título principal*/
 
 #page_title {
-  color: white;
+  z-index: 19;
+  color: #F2F2F2;
   padding: 70px 15px 150px;
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  background-color:rgb(170 38 38); 
-  border-bottom: rgb(190 154 40) solid 10px;
+  background-image: linear-gradient(to bottom, #1B8CA6, #02734A);;
+  border-bottom: #02734A solid 10px;
   float:center;
  }
 
 /* Imagen principal de la página */
 
 .center {
-  border:#fff 50px solid;
+  border: #F2F2F2 10px solid;
+  border-radius: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  width: 50%;
   height: auto;
-  float:center;
+  float: center;
   margin-top: -120px;
+  object-fit: cover;
 }
-
+  
 /* Formato de Títulos secundarios y párrafos*/
 
 h2 {
-  color: rgb(170 38 38);
-  padding: 2rem 1rem;
+  color: rgb(2 115 74); /*me parece que algo de bootstrap impide que los h2 se muestren en verde*/
+  padding: 5rem 1rem 1rem 1rem;
   text-align: center;
 }
 
-h3 {
-  color: #242527;
-  padding: 1rem
-}
+/*h3 {   --no tengo h3--
+  color: #02734A;
+  padding: 2rem 1rem;
+  text-align: center;
+}*/
 
 p {
   color: #242527;
   padding: 1rem 2rem;
   text-align: justify;
+  font-size: medium;
 }
 
 /*Sección "Catálogo de Cursos"*/
@@ -107,18 +105,21 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px;
+  margin: 1rem 3rem;
   }
 
   /* Diseño de cards individuales*/
 
 .card {
   background-color: #f1f1f1;
-  flex: 0 1 30%;
+  width: calc(20% - 20px);
   margin: 10px auto;
   padding: 0px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   transition: 0.3s;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
   }
 
  .card img {
@@ -126,54 +127,133 @@ p {
     border: 0;
     width: 100%;
     height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
   }
 
-         
+  .card h5 {
+    color: white;
+    padding: 0.5rem;
+    color: #1B8CA6;
+    text-align: center;
+
+    }
+
+/*.card p { --Ponerlo en un ribbon--
+    color: #242527;
+    padding: 0 0 0.5rem 0.5rem;
+    align-content: end;
+    margin:0;
+  }*/        
+
 .card:hover { 
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+ }
+
+ @media (max-width: 768px) {/*media query para vista en celular*/
+  .card {
+    width: 100%;
+  }
 }
 
-/* Preguntas Frecuentes*/
+/*@media (min-width: 768px) {/*media query para vista en tablet y pc - es redundante con lo especificado en .card??
+  .card {
+    width: calc(20% - 10px);
+  }
+}*/
 
-/* Botones para abrir y cerrar el acordeón*/
+/*Botón de inscricpción*/
+
+.boton-inscripcion {
+  display: block; /* Mostrar como bloque */
+  margin: 2rem auto; /* Establecer margen automático en los lados */
+  background-color: #038C5A; /* Color de fondo */
+  border: none; /* Borde sin estilo */
+  border-radius: 0.5rem; 
+  color: white; /* Color del texto */
+  padding: 15px 32px; /* Espaciado alrededor del texto */
+  text-align: center; /* Centrar el texto */
+  text-decoration: none; /* Quitar subrayado del texto */
+  font-size: 20px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+/*Ribbons*/
+
+.ribbon-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+}
+
+#ribbon-finalizado {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  background-color: #f00;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 40px;
+  transform: rotate(-40deg);
+  z-index: 1;
+}
+
+#ribbon-abierto {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  background-color: yellow;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 5px 40px;
+  transform: rotate(-40deg);
+  z-index: 1;
+}
+
+/*Acordeón*/
 
 .accordion {
-  background-color: rgb(190 154 40);
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 50%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;    
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto; 
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
+.panel-header {
+  background-image: linear-gradient(to right, #1B8CA6, #038C5A);
+  color: white;
+  padding: 15px;
+  font-size: 1.2em;
 }
 
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
+.panel-content {
+  padding: 0px;
+  font-size: 1.1em;
+  line-height: 1.5;
+  }
 
+@media (max-width: 768px) { /*para vista del acordeón en celular*/
+    .accordion {
+      max-width: 90%;
+    }
+    
+    .accordion {
+      grid-template-columns: 1fr;
+    }
+  }
+  
 
 /*        Footer            */
 
@@ -222,8 +302,6 @@ footer section p{
 
   margin: 0;
 }
-
-
 
 footer nav{
   
@@ -296,11 +374,7 @@ text-align: center;
     padding-right: 20px;
   }
 
-
-
 }
-
-
 
 /* Ajuste de pantalla a menor 424px de ancho */
 
