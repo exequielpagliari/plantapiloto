@@ -75,7 +75,6 @@ margin-top: -140px;
 border: #F2F2F2 10px solid;
 border-radius: 10px;
 
-
 }
 
 .text_one{
@@ -100,7 +99,7 @@ h4 #sub{
   font-size: 1rem;
 }
 .sub2{
-  
+
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -120,12 +119,9 @@ ul{
 .title_red{
   border-radius: 10px;
   box-shadow: 2rem;
-  background-image: linear-gradient(to bottom, #1B8CA6, #02734A);;
-  border-bottom: #037b4f solid 5px;
   margin: 15px;
-  color: #fafafa;
+  color:black;
   font-size: 1.5rem;
-  font-weight: bold;
   text-align: center;
 }
 .contenido p{
@@ -187,8 +183,6 @@ footer {
   padding: 0.5rem;
   text-align:justify;
   font-size: 0.9rem;
-  
-
 }
 
 #footer_info {
@@ -343,7 +337,7 @@ footer nav a:focus {
 
   }
   footer{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -364,6 +358,10 @@ footer nav a:focus {
     width: 50px;
 
   }
+
+  footer{
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width:720px) {
@@ -379,6 +377,10 @@ footer nav a:focus {
     width: 90%;
     margin-top:-100px;
   }
+
+  footer{
+    font-size: 1rem;
+  }
 }
 
 /* Ajuste de Pantalla menor a 720px */
@@ -391,7 +393,7 @@ footer nav a:focus {
   }
   
   footer{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
 }
