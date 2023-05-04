@@ -112,13 +112,26 @@ header {
 #quienessomos .container{
     text-align: center;
     padding: 200px 12px;
+    display: flex;
+
+    
 }
+
+#contactar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 350px;
+}
+
+
 
 #contactar .container{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
     text-align: center;
 
 }
