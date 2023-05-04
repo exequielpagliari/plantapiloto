@@ -6,53 +6,61 @@
   margin: 0;
 }
 
-/* Header */
-
+/*Barra de navegación*/
 
 header {
-
+  background-color: white;
   z-index: 20;
-  margin-top: 0;
+
+
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: space-around;
+  justify-content: space-around;
+  width: 100%;
+  height: 250px;
 }
 
 header .logo {
-  margin: 0;
-  padding: 25px 30px;
 
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 header .logo img {
   height: 100px;
   width: 100px;
+
 }
 
-header nav a{
+#navHeader {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  padding-bottom: 0px;
+}
+
+#navHeader a {
+  height: 34px;
   padding: 5px 12px;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  color:#1B8CA6;
+  color: #1B8CA6;
+
 }
 
-header nav {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 25px;
-}
-
-header a {
-  padding: 5px 12px;
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-}
 
 header a:hover {
-  color: #02734A;
+  /*background-color: #038C5A;*/
+  color: #038C5A;
+  text-decoration: underline;
 }
 
 
@@ -189,12 +197,23 @@ li {
   header {
     flex-direction: row;
     justify-content: space-around;
+    height: 160px;
+    margin-top: 0px;
   }
 
-  header nav {
+  #navHeader {
     flex-direction: row;
     padding-bottom: 0;
     padding-right: 20px;
+  }
+
+
+  #navHeader a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   /*.imagen { 
@@ -278,123 +297,136 @@ li {
 
 /*        Footer            */
 
-/*#quienessomos {
-  background-color: rgb(240, 240, 240);
-}
-
-#quienessomos .container {
-  text-align: center;
-  padding: 200px 12px;
-}
-
-#contactar .container {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 footer {
   z-index: 0;
+  margin-top: 3rem;
   padding-top: 25px;
-  background-color: white;
+  background-color: #F2F2F2;
+  border-top: #1B8CA6 solid 10px;
   height: 250px;
-  padding: 0.5rem;
-  text-align:justify;
-  font-size: 0.9rem;
-}
+  color:#1B8CA6;
+  }
 
-#footer_info {
+/*footer{
+  margin-top: 50px;
+  height: 250px;
+}*/
 
+#footer_info{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
-footer section {
-
+footer section{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-footer section p {
-
+footer section p{
   margin: 0;
 }
 
-footer nav {
+footer nav{
   display: flex;
   justify-content: space-evenly;
+  /*font-weight: bold;
+  color: black;
+  font-size: 1.40em;*/
 }
 
-#footer_links {
-
+#footer_links{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
+  color: #1B8CA6;
+  text-decoration: none;
 }
 
-footer section ul {
-  padding: 0;
+.linkFoo{
+  color: #1B8CA6;
   text-decoration: none;
+}
+footer section ul{
+  padding-left: 0;
+  padding-bottom: 20px;
   list-style: none;
 }
 
-
-
-footer nav a {
-
+/*footer nav a{
   text-decoration: none;
   color: black;
+}*/
+
+footer nav a .rrss{
+  margin-top: 2rem;
 }
 
-footer nav a .rrss {
-  margin-top: 25px;
-}
-
-i {
-
+i{
   font-size: 1.5rem;
+  color: #1B8CA6;
 }
 
-footer nav a:hover {
-  color: brown
-}
-
-footer nav a:focus {
-  color: brown
-}
-
-
-
-#copyright p {
-  margin-top: 20px;
-  text-align: center;
+footer nav a:hover{
+  color: #02734A;
+  text-decoration: underline;
 
 }
 
+footer nav a:focus{
+  color: #02734A;
+}
 
-
-  footer{
-    font-size: 1rem;
-  }
+#copyright p{
+margin-top: 20px;
+text-align: center;
+color: #1B8CA6;
 }
 
 /* Ajuste de Pantalla menor a 720px */
 
+@media (min-width: 720px) {
 
-/*@media screen and (min-width:424px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 160px;
+    margin-top: 0px;
+  }
+
+  #navHeader {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+
+  #navHeader a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 3px;
+    padding-bottom: 0px;
+
+}
+
+}
+
+/* Ajuste de pantalla a menor 424px de ancho */
+
+@media screen and (min-width:424px) {
+
+
+
   header ul {
     column-gap: 1rem;
 
   }
-  
-  footer{
-    font-size: 1rem;
+
+  #footer_info {
+    flex-direction: row;
   }
 
-}*/
+}
+}
