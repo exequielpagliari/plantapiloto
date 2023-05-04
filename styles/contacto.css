@@ -101,25 +101,7 @@ header {
     object-fit: cover;
   }
 
-#hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    background-image: linear-gradient(
-        0deg,
-        rgba(121, 0, 0, 0.5),
-        rgba(55, 1, 1, 0.5)
-    )
-    ,url(../img/planmta-piloto-head.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
+
 
 
 #quienessomos{
