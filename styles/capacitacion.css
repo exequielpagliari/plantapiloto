@@ -85,7 +85,6 @@ header a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  width: 50%;
   height: auto;
   float: center;
   margin-top: -120px;
@@ -95,7 +94,7 @@ header a:hover {
 /* Formato de Títulos secundarios y párrafos*/
 
 #h2 {
-  color: rgb(2 115 74); /*me parece que algo de bootstrap impide que los h2 se muestren en verde*/
+  color: rgb(2 115 74); 
   padding: 5rem 1rem 1rem 1rem;
   text-align: center;
 }
@@ -230,6 +229,7 @@ p {
   max-width: 1000px;
   margin: 0 auto; 
 }
+
 .panel {
   background-color: #fff;
   border-radius: 5px;
