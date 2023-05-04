@@ -89,7 +89,7 @@ main {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    background-color: rgb(27, 140, 166);
+    background-image: linear-gradient(to bottom, #1B8CA6, #02734A);;
     border-bottom: #02734A solid 10px;
     float: center;
 }
