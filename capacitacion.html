@@ -30,67 +30,67 @@
     <h1 id="page_title">Capacitación a distancia</h1>
       <img class="center" src="./img/online-learning.webp" alt="online-learning">
   
-    <h2>Catálogo de cursos</h2>
+    <h2 id="h2">Catálogo de cursos</h2>
   
       <section class="flex-container">
         
-        <article class="card"><!--<a href="#"></a>-->
+        <a id="link" href="./docs/intro-posco.pdf", target="_blank">
+        <article class="card">
           <article class="ribbon-container">
             <span id="ribbon-finalizado">Finalizado</span>
           </article>
           <img src="./img/introposco.png" alt="Intro a la poscosecha">
-          <h5>Introducción a la poscosecha</h5>
-          <!--<p>Inicio: marzo '23.</p>-->
+          <h5 id="h5">Introducción a la poscosecha</h5></a>
         </article>
+        
       
-        <article class="card"><a href="#"></a>
+        <a id="link" href="./docs/aireacion.pdf", target="_blank">
+        <article class="card">
           <article class="ribbon-container">
             <span id="ribbon-abierto">Inicio: abril '23</span>
           </article>
           <img src="./img/aireacion.png" alt="Aireación">
-          <h5>Aireación de granos</h5>
-          <!--<p>Inicio: abril '23</p>-->
-        </article>
+          <h5>Aireación de granos</h5></a>
+          </article>
         
-        <article class="card"><a href="#"></a>
+        <a id="link" href="./docs/insectos.pdf", target="_blank">
+        <article class="card">
           <article class="ribbon-container">
             <span id="ribbon-abierto">Inicio: mayo '23</span>
           </article>
           <img src="./img/insectos.png" alt="Control de plagas">
-          <h5>Control de plagas e inocuidad</h5>
-          <!--<p>Inicio: mayo '23.</p>-->
-          </article>
+          <h5>Control de plagas e inocuidad</h5></a>
+        </article>
   
-        <article class="card"><a href="#"></a>
+        <a id="link" href="./docs/semillas.pdf", target="_blank">
+        <article class="card">
           <article class="ribbon-container">
             <span id="ribbon-abierto">Inicio: agosto '23</span>
           </article>
           <img src="./img/semillas.png" alt="Poscosecha de semillas">
-          <h5>Poscosecha de semillas</h5>
-          <!--<p>Inicio: agosto '23.</p>-->
+          <h5>Poscosecha de semillas</h5></a>
         </article>
   
-        <article class="card"><a href="#"></a>
+        <a id="link" href="#">
+        <article class="card">
           <article class="ribbon-container">
             <span id="ribbon-abierto">Inicio: agosto '23</span>
           </article>
           <img src="./img/silobolsa.png" alt="Almacenamiento en silobolsa">
-          <h5>Almacenamiento en silobolsa</h5>
-          <!--<p>Inicio: agosto '23.</p>-->
-          </article>
+          <h5>Almacenamiento en silobolsa</h5></a>
+        </article>
   
       </section>
   
       <section>
         
-        <a href=#><button class="boton-inscripcion">Quiero inscribirme!</button></a>
+        <a id="link" href=#><button id="boton-inscripcion">Quiero inscribirme!</button></a>
   
       </section>
   
-      
-      <section>
+    <section>
   
-    <h2>Preguntas frecuentes</h2>
+    <h2 id="h2">Preguntas frecuentes</h2>
         
       <section class="accordion">
         
@@ -136,6 +136,22 @@
             <p>Manejo básico de Word y Excel y conexión a internet.</p>
           </article>
         </article>
+
+        <article class="panel">
+          <article class="panel-header">¿Cómo me inscribo?</article>
+          <article class="panel-content">
+            <p>Haciendo click más arriba, en el botón "Quiero inscribirme!"</p>
+          </article>
+        </article>
+
+        <article class="panel">
+          <article class="panel-header">Tengo más dudas!</article>
+          <article class="panel-content">
+            <p>Haciendo click en cada curso accedés a información más detallada. Si necesitás más información, escribínos en el formulario de contacto.</p>
+          </article>
+        </article>
+
+
   
       </section>
   
@@ -149,6 +165,7 @@
         <a class="linkFoo" href="./plantapiloto.html">Planta Piloto</a>
         <a class="linkFoo" href="./capacitacion.html">Capacitación a distancia</a>
         <a class="linkFoo" href="#">Contacto</a>
+        <a class="linkFoo" href="www.inta.gob.ar">INTA</a>
       </nav>
 
 
@@ -168,29 +185,11 @@
     </section>
 
     <section id="copyright">
-      <p>2023 - Todos los Derechos Reservados. Las Marcas y Logos de INTA, Cosecha de Granos</p>
+      <p>2023 - Todos los Derechos Reservados. Las marcas y logos de INTA.</p>
     </section>
 
   </footer>
 </body>
-
-
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-</script>
 
 
 </html>
