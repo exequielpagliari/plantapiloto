@@ -1,3 +1,5 @@
+var prevButton = document.getElementById("slide-arrow-prev");
+var nextButton = document.getElementById("slide-arrow-next");
 var posc = document.querySelector(".articulo");
 var newPosc = document.querySelector(".slide");
 var cantPosc = 0;
@@ -6,8 +8,6 @@ console.log(posc);
 console.log(posc.length);
 console.log(newPosc);
 
-const prevButton = document.getElementById("slide-arrow-prev");
-const nextButton = document.getElementById("slide-arrow-next");
 
 nextButton.addEventListener("click", () => {
   cantPosc++;
