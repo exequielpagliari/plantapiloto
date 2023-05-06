@@ -6,6 +6,11 @@ console.log(posc);
 console.log(posc.length);
 console.log(newPosc);
 
+const slidesContainer = document.getElementById(".slide");
+const slide = document.querySelector(".articulo");
+const prevButton = document.getElementById("slide-arrow-prev");
+const nextButton = document.getElementById("slide-arrow-next");
+
 nextButton.addEventListener("click", () => {
   cantPosc++;
   refrescar();
