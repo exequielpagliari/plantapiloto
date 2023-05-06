@@ -86,7 +86,7 @@ header a:hover {
     float: center;
     margin-top: -120px;
     object-fit: cover;
-  }
+}
 
 
 #page_title {
@@ -102,10 +102,10 @@ header a:hover {
 }
 
 
-.line{
+.line {
     margin-top: 5%;
     width: 90%;
-    margin-left:  5%;
+    margin-left: 5%;
     height: 5px;
     background-color: #02734A;
     margin-bottom: 0;
@@ -121,7 +121,7 @@ header a:hover {
 
 }
 
-.texto + section{
+.texto+section {
     margin-top: 25px;
     margin-bottom: 10%;
 }
@@ -145,49 +145,90 @@ header a:hover {
 
 }
 
-#misionVision article p{
+#misionVision article p {
     padding: 1rem 2rem;
 
 
 }
 
+/*Acordeón*/
 
-#uno {
-    background-color: #1B8CA6;
-    
+.accordion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-    
-#dos {
-    background-color: #02734A;
-}
-    
 
-#misionVision h4 {
+.panel {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+}
+
+.panel-header {
+    background-image: linear-gradient(to right, #1B8CA6, #038C5A);
+    color: white;
+    padding: 15px;
+
     text-align: center;
-    padding: 1rem 2rem 0 2rem;
 }
 
-.listaMetas{
-    margin: 5% 10%;
+.der {
+    background-image: linear-gradient(to right, #1B8CA6, #038C5A);
+}
+
+.izq {
+    background-image: linear-gradient(to right, #038C5A, #1B8CA6);
+}
+
+.panel-content {
+    padding: 2%;
+
+    line-height: 1.5;
+
+}
+
+
+
+
+
+
+.listaMetas {
+
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #1BA1BF;
+    background-image: linear-gradient(to right, #038C5A, #1B8CA6);
+    margin: 0%;
+
+
+
+
 }
 
-.listaMetas ul{
-    width: 50%;
+.listaMetas ul {
+    width: 75%;
     list-style: decimal;
     color: #F2F2F2;
 }
 
-.listaMetas li{
+.listaMetas li {
 
     margin: 1rem;
 }
 
-.listaMetas h4{
+.listaMetas h4 {
+    margin-top: 1%;
     text-align: center;
+    color: #F2F2F2;
+    padding: 1%;
+
 
 
 }
@@ -280,52 +321,27 @@ footer nav a:focus {
 
 
 .tag {
-  opacity: 0;
-  transform: translate(-10vh, 0);
-  transition: all 2.25s;
+    opacity: 0;
+    transform: translate(-10vh, 0);
+    transition: all 2.25s;
 }
 
 
 
 .tag.visible {
-  opacity: 1;
-  transform: translate(0, 0);
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 
 @media (min-width: 900px) {
 
 
-    #misionVision {
-        display: flex;
-        margin-top: 75px;
-        margin-left: 5%;
-        margin-right: 5%;
-        justify-content: space-around;
-        flex-direction: row;
-        margin-bottom: 75px;
-    }
-    
-    #misionVision article {
-        width: 35%;border-radius: 25px;
-        border-radius: 25px;
-    
-    }
-    
-    #misionVision article p{
-        padding: 1rem 2rem;
-    }
-    
-    
-    #uno {
-        background-color: #1B8CA6;
-    }
-        
-    #dos {
-        background-color: #02734A;
-    }
-        
-    
+
+
+
+
+
     #misionVision h4 {
         text-align: center;
         padding: 1rem 2rem 0 2rem;
@@ -340,12 +356,28 @@ footer nav a:focus {
 
 
 
+@media (max-width: 768px) {
+
+    /*para vista del acordeón en celular*/
+    .accordion {
+        max-width: 90%;
+    }
+
+    .accordion {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
 @media (min-width: 720px) {
 
-    .line{
+
+    .line {
         margin-top: 5%;
         width: 50%;
-        margin-left:  25%;
+        margin-left: 25%;
         height: 5px;
         background-color: #02734A;
         margin-bottom: 0;
@@ -359,8 +391,8 @@ footer nav a:focus {
         margin-right: auto;
         float: center;
     }
-    
-    .texto + section{
+
+    .texto+section {
         margin-top: 25px;
         margin-bottom: 5%;
     }
@@ -378,14 +410,20 @@ footer nav a:focus {
         padding-right: 20px;
     }
 
-    #navHeader a {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-
+    .listaMetas {
+        flex-direction: row;
+        margin: 5% 10%;
+        width: auto;
     }
+    
+
+
+    .listaMetas ul {
+        width: 50%;
+        list-style: decimal;
+        color: #F2F2F2;
+    }
+    
 
 }
 
