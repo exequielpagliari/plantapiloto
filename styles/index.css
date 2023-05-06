@@ -209,9 +209,9 @@ article a{
 .banner{
     width: 60%;
 
-    position: relative;top: -250px; left: 20%;
+    position: relative;top: -550px; left: 20%;
     z-index: 20;
-    background-color: rgba(165, 42, 42, 0.5);
+    background-color: rgba(165, 42, 42, 0.6);
     border-radius: 5px;
     text-align: center;
 }
@@ -333,6 +333,7 @@ footer nav a:focus {
         justify-content: space-around;
         height: 100px;
         margin-top: 0px;
+        
     }
 
     #navHeader {
@@ -351,6 +352,10 @@ footer nav a:focus {
 
     }
 
+    .banner{
+        position: relative;top: -250px; left: 20%;
+        background-color: rgba(165, 42, 42, 0.5);
+    }
 }
 
 /* Ajuste de pantalla a menor 424px de ancho */
