@@ -263,23 +263,29 @@ article a {
 
 .blog {
     display: flex;
-    height: 500px;
+    height: auto;
+
+}
+
+
+.blog h4 {
+    margin: 2.5%;
 }
 
 .blog article {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 50%;
-    padding: 5%;
+    height: auto;
+    
+    padding: 2.5%;
     margin: 2.5%;
 }
 
 .blog article img {
 
 
-    height: 170px;
-    width: 300px;
+    height: auto;
+    width: 100%;
     object-fit: cover;
 
 }
@@ -289,7 +295,7 @@ article a {
 .clanedario {
 
     display: flex;
-
+    
 
 }
 
@@ -297,26 +303,41 @@ article a {
 
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 150px;
+    width: 300px;
     justify-items: center;
     align-items: center;
-    padding-right: auto;
+    padding-right: 2.5%;
     margin: 2.5%;
+
+
 
 }
 
-#calenNumber{
+#calenNumber {
 
     padding: 5%;
     text-align: center;
 
 }
 
-#calenText{
-    width: 60%;
+#calenText {
+    width: 10%;
 }
 
 
+.tag {
+    opacity: 0;
+    transform: translate(10vh, 0);
+    transition: all 2.25s;
+}
+
+
+
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
 
 
 footer {
