@@ -38,7 +38,7 @@ header .logo {
     align-items: center;
 }
 
-.logo a{
+.logo a {
     margin: 0;
     padding: 0;
     display: flex;
@@ -99,14 +99,15 @@ main {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    background-image: linear-gradient(to bottom, #1B8CA6, #02734A);;
+    background-image: linear-gradient(to bottom, #1B8CA6, #02734A);
+    ;
     border-bottom: #02734A solid 10px;
-    float:center;
-  }
-  
-  /* Imagen principal de la página */
-  
-  .center {
+    float: center;
+}
+
+/* Imagen principal de la página */
+
+.center {
     border: #F2F2F2 10px solid;
     border-radius: 10px;
     display: block;
@@ -117,7 +118,8 @@ main {
     float: center;
     margin-top: -120px;
     object-fit: cover;
-  }
+}
+
 /* Slideshow container */
 .carrusel {
     margin-top: -120px;
@@ -128,11 +130,11 @@ main {
     margin-right: auto;
     float: center;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 
 }
 
-.slide-arrow{
+.slide-arrow {
     cursor: pointer;
     position: absolute;
     top: 35%;
@@ -170,7 +172,8 @@ main {
 
     z-index: 20;
 }
-.slide{
+
+.slide {
 
     display: flex;
 
@@ -190,45 +193,47 @@ article {
     width: 100%;
     object-fit: cover;
     background-color: #02734A;
-    overflow:hidden;
+    overflow: hidden;
     color: #F2F2F2;
 
 
 
 
 
-    
+
 }
 
-article img{
+article img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     background-color: #02734A;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-article a{
+article a {
     text-decoration: none;
     color: #F2F2F2;
 
 }
 
-.banner{
+.banner {
     width: 60%;
-    position: relative;top: -500px; left: 20%;
+    position: relative;
+    top: -500px;
+    left: 20%;
     z-index: 20;
     background-color: rgba(165, 42, 42, 0.8);
     border-radius: 5px;
     text-align: center;
 }
 
-.banner h5{
+.banner h5 {
     text-align: center;
 
 }
 
-.banner p{
+.banner p {
     padding: 5%;
 }
 
@@ -247,7 +252,7 @@ article a{
 
 
 
-#info{
+#info {
 
     display: flex;
     margin-top: 10px;
@@ -255,34 +260,63 @@ article a{
 
 }
 
-.blog{
+.blog {
     display: flex;
-
+    height: 500px;
 }
 
-.blog article{
+.blog article {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 100%;
     width: 50%;
     padding: 5%;
+    margin: 2.5%;
 }
 
+.blog article img {
 
-.clanedario{
 
-        display: flex;
-        height: 200px;
+    height: 170px;
+    width: 300px;
+    object-fit: cover;
 
 }
 
-.clanedario article{
+.blog article h4 {
+    margin: 5%;
 
-display: flex;
-flex-direction: column;
+}
+
+.clanedario {
+
+    display: flex;
+
+
+}
+
+.calendario article {
+
+    display: flex;
+    flex-direction: row;
     height: 200px;
+    justify-items: center;
+    align-items: center;
 
 }
+
+#calenNumber{
+
+    padding: 5%;
+
+}
+
+#calenText{
+    width: 60%;
+}
+
+
+
 
 footer {
     z-index: 0;
@@ -380,7 +414,7 @@ footer nav a:focus {
         justify-content: space-around;
         height: 75px;
         margin-top: 0px;
-        
+
     }
 
     #navHeader {
@@ -389,7 +423,7 @@ footer nav a:focus {
         padding-right: 20px;
     }
 
-    .slide-arrow{
+    .slide-arrow {
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -411,12 +445,14 @@ footer nav a:focus {
         opacity: 0.5;
         transition: opacity 100ms;
         height: 4rem;
-    
+
         font-size: 3rem;
     }
 
-    .banner{
-        position: relative;top: -250px; left: 20%;
+    .banner {
+        position: relative;
+        top: -250px;
+        left: 20%;
         background-color: rgba(165, 42, 42, 0.65);
     }
 }
