@@ -244,6 +244,37 @@ article a{
 }
 
 
+
+
+
+#info{
+
+    display: flex;
+    margin-top: 10px;
+
+
+}
+
+.blog{
+    display: flex;
+    width: 50%;
+}
+
+.blog article{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 50%;
+    padding: 5%;
+}
+
+
+.clanedario{
+
+        display: flex;
+
+}
+
 footer {
     z-index: 0;
     padding-top: 25px;
