@@ -257,7 +257,7 @@ article a{
 
 .blog{
     display: flex;
-    width: 50%;
+
 }
 
 .blog article{
@@ -272,6 +272,15 @@ article a{
 .clanedario{
 
         display: flex;
+        height: 200px;
+
+}
+
+.clanedario article{
+
+display: flex;
+flex-direction: column;
+    height: 200px;
 
 }
 
