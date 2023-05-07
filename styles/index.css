@@ -258,6 +258,7 @@ article a {
     margin-top: 10px;
 
 
+
 }
 
 .blog {
@@ -283,10 +284,7 @@ article a {
 
 }
 
-.blog article h4 {
-    margin: 5%;
 
-}
 
 .clanedario {
 
@@ -302,12 +300,15 @@ article a {
     height: 200px;
     justify-items: center;
     align-items: center;
+    padding-right: auto;
+    margin: 2.5%;
 
 }
 
 #calenNumber{
 
     padding: 5%;
+    text-align: center;
 
 }
 
