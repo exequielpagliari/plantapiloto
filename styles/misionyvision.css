@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Nunito', sans-serif
+
 }
 
 ul {
@@ -11,7 +11,6 @@ ul {
 
 body {
     margin: auto;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #F2F2F2;
 }
 
@@ -123,6 +122,7 @@ header a:hover {
     margin-left: auto;
     margin-right: auto;
     float: center;
+    text-align: justify;
 
 }
 
