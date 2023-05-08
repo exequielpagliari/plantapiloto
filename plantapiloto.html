@@ -7,6 +7,8 @@
     <title>Planta Piloto</title>
     <link rel="icon" type="image/x-icon" href="./img/progranos-cuadrado-transp.png">
     <link rel="stylesheet" href="./styles/plantapiloto.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
    
 </head>
 
@@ -61,13 +63,13 @@
 <section>
   <h2 id="h2" >Infraestructura y equipamiento</h2>
     <ul class="listas">
-      <li>300 m2 de superficie cubierta</li>
+      <li>300 metros cuadrados de superficie cubierta</li>
       <li>Seis silos de 5000 kg de capacidad cada uno (tres con aireación)</li>
       <li>Cintas para carga y descarga</li>
       <li>Unidad de secado en tandas hasta 60°C</li>
       <li>Tolva para llenado de big-bags</li>
       <li>Termoselladora industrial</li>
-      <li>Sistema de inyección de gases (N2 y CO2), rotámetros y caudalímetros para crear atmósferas específicas</li>
+      <li>Sistema de inyección de gases (nitrógeno y dióxido de carbono), rotámetros y caudalímetros para crear atmósferas específicas</li>
       <li>Sistemas para evaluar hermeticidad en envases herméticos</li>
       <li>Sistemas de medición de gases</li>
       <li>Equipamiento de dosificación automática para aplicación de insecticidas líquidos</li>
@@ -79,7 +81,47 @@
 <section>
   <h2 id="h2">Donaciones</h2>
 
-    <div id="carouselExample2" class="carousel slide">
+  <section class="carrusel">
+    <button class="slide-arrow" id="slide-arrow-prev">
+      &#8249;
+    </button>
+    <button class="slide-arrow" id="slide-arrow-next">
+      &#8250;
+    </button>
+    
+    <section class="slide">
+      
+      <article class="articulo" id="a1">
+        <img src="./img/donacion3.jpg">
+        <section class="banner">
+          <h3>FUGRAN</h3>
+          <p>Equipo de dosificación autómatico de insecticidas</p>
+        </section>
+      </article>
+
+      <article class="articulo" id="a2">
+        <img src="./img/donacion4.jpg">
+          <section class="banner">
+            <h3></h3>
+            <p>Ductos de aireación para silos</p>
+          </section>
+        </a>
+      </article>
+
+      <article class="articulo" id="a3">
+          <img src="./img/donacion1.jpg">
+          <section class="banner">
+            <h3>JENSEN&GABUTTI</h3>
+            <p>Ventiladores para silos</p>
+          </section>
+        </a>
+      </article>
+
+    </section>
+    
+  </section>
+
+   <!-- <div id="carouselExample2" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./img/donacion1.jpg" class="d-block w-100" alt="...">
@@ -103,7 +145,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div>-->
 </section>
    
 <!-- <article class="contenido"></article>
@@ -163,5 +205,8 @@
   </section>
 
 </footer>
+
+<script src="./js/plantapiloto.js"></script>
+
 </body>
 </html>

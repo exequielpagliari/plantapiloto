@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
 * {
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 0;
 }
 
@@ -96,8 +94,6 @@ header a:hover {
   object-fit: cover;
 }
 
-/*Falta media query para imagen*/
-
 /*Subtítulos*/
 
 #h2 {
@@ -110,8 +106,8 @@ header a:hover {
 
 #text_one{
   text-align: justify;
-  margin: 2rem auto;
-  max-width: 70%;
+  margin: 1rem auto;
+  max-width: 80%;
   background-color: #1B8CA6;
   color:white;
   font-size: 20px;
@@ -129,11 +125,11 @@ header a:hover {
 
 #text_two{
   text-align: justify;
-  margin: 1rem 10rem;
+  margin: 1rem auto;
+  max-width: 80%;
   color:black;
   font-size: 18px;
   }
-
 
 /*Listas*/
 
@@ -141,6 +137,7 @@ header a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
+  max-width: 80%;
   margin: 0 auto; 
   }
 
@@ -157,23 +154,102 @@ li {
     align-items: center;
   }
 
-  @media (max-width: 768px) { /*para vista de listas en celular*/
-    .listas {
-      max-width: 90%;
-    }
-    
-    .listas {
-      grid-template-columns: 1fr;
-    }
+  
+/*Carrusel*/
+
+.carrusel {
+  margin-top: 1rem;
+  border: #F2F2F2 10px solid;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  float: center;
+  position: relative;
+  overflow: hidden;
   }
 
-/*Carrusel en Donaciones*/
+.slide-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 20;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+  height: 4rem;
+  font-size: 3rem;
+}
 
-#carouselExample{
-  height: 100%;
-  width: 340px;
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+
+#slide-arrow-next {
+  right: 0;
+  z-index: 20;
+}
+
+.slide {
   display: flex;
-  margin: auto;
+  scroll-behavior: smooth;
+  list-style: none;
+  width: 300%;
+  height: 80vh;
+  transition: all 0.5s ease;
+  transform: translateX(0);
+  overflow: hidden;
+}
+
+*article {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  background-color: #02734A;
+  overflow: hidden;
+  color: #F2F2F2;
+}
+
+article img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: #02734A;
+  overflow: hidden;
+  }
+
+.banner {
+  width: 60%;
+  position: relative;
+  top: -150px;
+  left: 20%;
+  z-index: 20;
+  background-color: rgba(165, 42, 42, 0.8);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.banner h5 {
+  text-align: center;
+  }
+
+.banner p {
+  padding: 5%;
 }
 
 /*Logos de empresas*/
@@ -191,10 +267,7 @@ li {
   object-fit: contain; /* Ajusta el tamaño de la imagen para conservar sus proporciones originales */
 }
 
-/*#carouselExampleIndicators{
-  width: 500px;
-  margin: auto;
-}*/
+
 
 @media screen and (min-width:720px) {
   
@@ -211,7 +284,6 @@ li {
     padding-right: 20px;
   }
 
-
   #navHeader a {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -219,13 +291,6 @@ li {
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
-
-  /*.imagen { 
-  margin-top: -120px;
-  margin: auto;
-  height: 10%;
-  width: 10%;
-  }*/
 
   #head_icon {
     display: flex;
@@ -235,39 +300,13 @@ li {
   }
 
     #carouselExample {
-    height: 100%;
+    height: auto;
     width: 340px;
     margin: auto;
   }
   
-  /*.containercolab{
-    margin: auto;
-    height: 100%;
-  }*/
-
-  /*.container img{
-    width: 50px;
-    height: 100%;
-  }
   
-  .containercolab{
-    margin: auto;
-    width: 290px;
-    display: flex;
-    justify-content: center;
-  }
-
-  /*.container img{
-    width: 50px;
-
-  }
-  
-  /*footer{
-    font-size: 1rem;
-  }
-}*/
-
-/*@media screen and (min-width:1100px) {
+  /*@media screen and (min-width:1100px) {
   #carouselExample {
     height: 100%;
     width: 340px;
@@ -281,23 +320,7 @@ li {
     justify-content: center;
   }
 
-  }
-
-/*@media screen and (min-width:720px) {
-  .containercolab{
-    width: 90px;
-  }
-
-  .container img{
-    width: 50px;
-
-  }
-  .imagen{
-    width: 90%;
-    margin-top:-100px;
-  }*/
-
-
+  
 
 /*        Footer            */
 
@@ -358,11 +381,6 @@ footer section ul{
   list-style: none;
 }
 
-/*footer nav a{
-  text-decoration: none;
-  color: black;
-}*/
-
 footer nav a .rrss{
   margin-top: 2rem;
 }
@@ -405,32 +423,25 @@ color: #1B8CA6;
     padding-right: 20px;
   }
 
-
   #navHeader a {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+  }
 
-}
-
-}
-
+  
 /* Ajuste de pantalla a menor 424px de ancho */
 
 @media screen and (min-width:424px) {
 
-
-
   header ul {
     column-gap: 1rem;
-
   }
 
   #footer_info {
     flex-direction: row;
   }
 
-}
-}
+  }
