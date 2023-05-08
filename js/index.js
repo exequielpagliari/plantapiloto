@@ -21,8 +21,8 @@ prevButton.addEventListener("click", () => {
 
 
 function refrescar(){
-if (cantPosc < 0) {cantPosc = 3} 
-else if (cantPosc > 3) {cantPosc = 0};
-operacion = cantPosc * -25;
+if (cantPosc < 0) {cantPosc = 4} 
+else if (cantPosc > 4) {cantPosc = 0};
+operacion = cantPosc * -20;
 newPosc.style.transform = `translateX(${ operacion }%)`;
 }
