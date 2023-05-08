@@ -89,7 +89,7 @@ header a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 50%;
   height: auto;
   float: center;
   margin-top: -120px;
@@ -161,15 +161,9 @@ p {
 
  @media (max-width: 768px) {/*media query para vista en celular*/
   .card {
-    width: 100%;
+    width: 70%;
   }
 }
-
-/*@media (min-width: 768px) {/*media query para vista en tablet y pc - es redundante con lo especificado en .card??
-  .card {
-    width: calc(20% - 10px);
-  }
-}*/
 
 /*Botón de inscricpción*/
 
