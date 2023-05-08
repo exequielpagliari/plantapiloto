@@ -255,10 +255,9 @@ article a {
 .info {
 
     display: flex;
-    margin: auto;
-    margin-left: 5%;
-    margin-right: 2.5%;
-    margin-top: 10px;
+    margin: 5% 2.5% 10% 5%;
+
+    
     flex-direction: row;
     position: relative;
     float: center;
@@ -271,6 +270,12 @@ article a {
 
 
 
+}
+
+.info h3{
+    text-align: center;
+    margin: 2.5%;
+    color: #1B8CA6;;
 }
 
 .blog {
@@ -290,9 +295,7 @@ article a {
 }
 
 
-.blog h4 {
-    margin: 2.5%;
-}
+
 
 .blog article {
     display: flex;
@@ -323,6 +326,18 @@ article a {
     margin: auto;
     margin-bottom: 2.5%;
 
+}
+
+.calendario h3{
+    text-align: center;
+    margin: 2.5%;
+    color: #1B8CA6;
+}
+
+.calendario article h3{
+    text-align: center;
+    margin: 2.5%;
+    color: #f2f2f2;
 }
 
 .calendario article {
