@@ -45,8 +45,8 @@ header .logo {
 }
 
 header .logo img {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     margin: 0;
     padding: 0;
 
@@ -359,9 +359,18 @@ article a {
     transition: all 2.25s;
 }
 
-
+.tagiz {
+    opacity: 0;
+    transform: translate(-10vh, 0);
+    transition: all 2.25s;
+}
 
 .tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.tagiz.visible {
     opacity: 1;
     transform: translate(0, 0);
 }
