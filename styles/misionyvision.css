@@ -199,28 +199,27 @@ header a:hover {
 
 }
 
-
-
-
-
-
 .listaMetas {
-
     display: flex;
+    max-width: 80%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: #038C5A;
-    margin: 0%;
+    margin: 2rem auto;
     animation-name: cambiaColor;
     animation-duration: 6s;
     animation-delay: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-
-
-
+    border-radius: 2rem;
 }
+
+#silos {
+    max-width: 50%;
+    border-radius: 2rem 0rem 0rem 2rem;
+}
+
 
 @keyframes cambiaColor {
     0% {
