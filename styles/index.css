@@ -252,11 +252,20 @@ article a {
 
 
 
-#info {
+.info {
 
     display: flex;
+    margin: auto;
     margin-top: 10px;
-    flex-direction: column;
+    flex-direction: row;
+    position: relative;
+    float: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+
+
 
 
 
@@ -265,8 +274,13 @@ article a {
 .blog {
     display: flex;
     height: auto;
-    width: 100%;
-    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+
+
 }
 
 
@@ -278,8 +292,8 @@ article a {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 100%;
-    padding: 1%;
+    width: 250px;
+    padding: 5%;
     margin: 2.5%;
 
 }
@@ -299,6 +313,7 @@ article a {
 
     display: flex;
     flex-direction: column;
+    margin: auto;
 
 
 }
@@ -308,11 +323,12 @@ article a {
     display: flex;
     flex-direction: row;
     height: 100px;
-    width: 100%;
+    max-width: 100%;
     justify-items: center;
     align-items: center;
     padding-right: 2.5%;
-    margin: 2.5%;
+    margin: auto;
+    margin-top: 2.5%;
 
 
 
@@ -482,8 +498,8 @@ footer nav a:focus {
         background-color: rgba(165, 42, 42, 0.65);
     }
 
-
-    #info {
+    /*
+    .info {
 
         display: flex;
         margin-top: 10px;
@@ -492,6 +508,7 @@ footer nav a:focus {
     
     
     }
+    */
 
     .calendario {
 
@@ -520,8 +537,11 @@ footer nav a:focus {
 
     .blog {
 
-        flex-direction: row;
+        flex-wrap: nowrap;
+
     }
+
+
 }
 
 
