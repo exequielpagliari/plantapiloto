@@ -195,7 +195,7 @@ main {
     top: -500px;
     left: 20%;
     z-index: 20;
-    background-color: rgba(27,140,166,0.65)
+    background-color: rgba(27,140,166,0.65);
     border-radius: 20px;
     text-align: center;
 }
@@ -260,8 +260,8 @@ main {
     flex-direction: column;
     height: auto;
     min-width: 250px;
-    padding: 5%;
-    margin: 0;
+    padding: 4%;
+    margin: 2.5%;
     
     
 
@@ -283,8 +283,9 @@ main {
 }
 
 .blog p {
-    text-align: justify;
+    text-align: left;
     margin: 0 auto;
+    padding: 0;
     color: #F2F2F2;
     font-size: smaller;
 }
@@ -545,7 +546,16 @@ footer {
 
         flex-wrap: nowrap;
 
+
     }
+
+    .blog article {
+
+        margin: 0;
+
+    }
+
+
 
     .calendario {
 
