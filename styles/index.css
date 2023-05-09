@@ -251,6 +251,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 600px;
+    column-gap: 10px;
+    
     }
 
 .blog article {
@@ -260,6 +262,7 @@ main {
     min-width: 250px;
     padding: 5%;
     margin: 0;
+    
     
 
 }
@@ -293,6 +296,7 @@ main {
     margin-bottom: 2.5%;
     align-items: flex-start;
     align-content: space-between;
+    row-gap: 10px;
     }
 
 .calendario h2{
@@ -361,6 +365,7 @@ article {
     overflow: hidden;
     color: #F2F2F2;
     border-radius: 0.5rem;
+    
     
 }
 
