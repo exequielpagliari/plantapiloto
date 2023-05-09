@@ -4,9 +4,8 @@ var posc = document.querySelector(".articulo");
 var newPosc = document.querySelector(".slide");
 var cantPosc = 0;
 var operacion = 0;
-console.log(posc);
-console.log(posc.length);
-console.log(newPosc);
+var cantidadImagenesCarruselPorcentural = 100 / 3
+
 
 
 nextButton.addEventListener("click", () => {
@@ -23,6 +22,10 @@ prevButton.addEventListener("click", () => {
 function refrescar(){
 if (cantPosc < 0) {cantPosc = 2} 
 else if (cantPosc > 2) {cantPosc = 0};
-operacion = cantPosc * -33.3;
+operacion = cantPosc * -cantidadImagenesCarruselPorcentural;
 newPosc.style.transform = `translateX(${ operacion }%)`;
+console.log(posc);
+console.log(posc.length);
+console.log(newPosc);
+console.log(operacion);
 }

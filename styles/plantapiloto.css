@@ -208,17 +208,17 @@ li {
   display: flex;
   scroll-behavior: smooth;
   list-style: none;
-  width: 300%;
-  height: 80vh;
+  width: 350%;
+
   transition: all 0.5s ease;
   transform: translateX(0);
   overflow: hidden;
 }
 
-*article {
-  height: 80vh;
-  width: 100%;
-  object-fit: cover;
+.article {
+  height: 56rem;
+  width: auto;
+  object-fit: fill;
   background-color: #02734A;
   overflow: hidden;
   color: #F2F2F2;
@@ -236,7 +236,7 @@ article img {
   width: 60%;
   position: relative;
   top: -150px;
-  left: 20%;
+  left: 13%;
   z-index: 20;
   background-color: rgba(27,140,166, 0.65);
   color: white;
@@ -445,3 +445,7 @@ color: #1B8CA6;
   }
 
   }
+
+}
+
+}
