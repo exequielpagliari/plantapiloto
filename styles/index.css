@@ -35,8 +35,8 @@ header {
 header .logo {
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -47,8 +47,8 @@ header .logo {
 }
 
 #logo-progranos img {
-    height: 60px;
-    width: 60px;
+    height: 3.75rem;
+    width: 3.75rem;
     object-fit: cover;
     margin: 0;
     padding: 0;
