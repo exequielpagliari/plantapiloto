@@ -12,6 +12,7 @@ ul {
 body {
     margin: auto;
     background-color: #F2F2F2;
+    overflow-x: hidden;
 }
 
 
@@ -216,8 +217,13 @@ header a:hover {
 }
 
 #silos {
+
+    margin-top: 5%;
     max-width: 50%;
-    border-radius: 2rem 0rem 0rem 2rem;
+
+    max-height: 100%;
+    border-radius: 2rem 2rem 2rem 2rem;
+    object-fit: scale-down;
 }
 
 
@@ -237,7 +243,7 @@ header a:hover {
 
 
 .listaMetas ul {
-    width: 75%;
+    width: 100%;
     list-style: decimal;
     color: #F2F2F2;
 }
@@ -443,12 +449,21 @@ footer nav a:focus {
 
 
     .listaMetas ul {
-        width: 50%;
+        max-width: 374px;
+        min-width: 50%;
         list-style: decimal;
         color: #F2F2F2;
     }
 
 
+    #silos {
+        margin-top: 0%;
+        max-width: 50%;
+    
+        max-height: 100%;
+        border-radius: 2rem 0rem 0rem 2rem;
+        object-fit: scale-down;
+    }
 }
 
 @media screen and (min-width:424px) {
@@ -461,6 +476,14 @@ footer nav a:focus {
         flex-direction: row;
     }
 
+
+
+
+    .listaMetas ul {
+        width: 75%;
+        list-style: decimal;
+        color: #F2F2F2;
+    }
 }
 
 
