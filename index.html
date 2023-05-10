@@ -8,17 +8,34 @@
   <title>INTA Granos - Innovación en Poscosecha de Granos</title>
   <script src="https://kit.fontawesome.com/3e40217e48.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <link rel="icon" type="image/x-icon" href="./img/progranos-cuadrado-transp.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <script src="./js/jquery.js"></script>
   <script src="./js/tag.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 </head>
 
 <body>
 
-  <header>
+  <header id="header">
+
+
+    <section v-html="header"></section>
+
+
+
+
+
+
+
+
+  </header>
+  <header id="header">
+    <section v-html="html"></section>
     <section class="logo">
       <a id="logo-progranos" href="./index.html"><img src="./img/progranos-cuadrado-transp.png" alt=""></a>
       <a id="logo-inta" href="./index.html"><img src="./img/logo-inta-chico.jpg" alt=""></a>
@@ -29,6 +46,11 @@
       <a href="./capacitacion.html">Capacitación a distancia</a>
       <a href="./contacto.html">Contacto</a>
     </nav>
+    
+
+
+
+    
   </header>
   <main>
     <section>

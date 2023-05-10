@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INTA Granos - Innovación en Poscosecha de Granos</title>
   <link rel="stylesheet" href="./styles/misionyvision.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -17,13 +19,15 @@
 </head>
 
 <body>
-  <header>
+  </header>
+  <header id="header">
+    <section v-html="html"></section>
     <section class="logo">
-      <img src="./img/progranos-cuadrado-transp.png" alt="">
+      <a id="logo-progranos" href="./index.html"><img src="./img/progranos-cuadrado-transp.png" alt=""></a>
+      <a id="logo-inta" href="./index.html"><img src="./img/logo-inta-chico.jpg" alt=""></a>
     </section>
 
     <nav id="navHeader">
-      <a href="./index.html">Home</a>
       <a href="./plantapiloto.html">Planta Piloto</a>
       <a href="./capacitacion.html">Capacitación a distancia</a>
       <a href="./contacto.html">Contacto</a>
@@ -36,39 +40,43 @@
     <section class="line"> </section>
 
     <section class="texto tag">
-      <p>La poscosecha de granos debe abordar retos como la seguridad alimentaria, la inocuidad y la sostenibilidad ambiental. 
-        Se requiere un enfoque interdisciplinario y la colaboración de agentes públicos y privados para enfrentar estos problemas. 
-        El PRO-Granos es una herramienta que busca soluciones a través de la investigación y la transferencia de tecnologías.</p>
+      <p>La poscosecha de granos debe abordar retos como la seguridad alimentaria, la inocuidad y la sostenibilidad
+        ambiental.
+        Se requiere un enfoque interdisciplinario y la colaboración de agentes públicos y privados para enfrentar estos
+        problemas.
+        El PRO-Granos es una herramienta que busca soluciones a través de la investigación y la transferencia de
+        tecnologías.</p>
     </section>
 
     <section class="line"> </section>
 
 
-    <section class="accordion tag" >
+    <section class="accordion tag">
 
       <article class="panel">
-        <article class="panel-header der" >MISIÓN</article>
+        <article class="panel-header der">MISIÓN</article>
         <article class="panel-content">
-          <p>Fomentar la investigación interdisciplinaria y la transferencia de conocimientos y tecnologías 
-            entre el sector público y privado para mejorar la conservación y transformación de granos y productos derivados. </p>
+          <p>Fomentar la investigación interdisciplinaria y la transferencia de conocimientos y tecnologías
+            entre el sector público y privado para mejorar la conservación y transformación de granos y productos
+            derivados. </p>
         </article>
       </article>
 
       <article class="panel">
         <article class="panel-header izq">VISIÓN</article>
         <article class="panel-content">
-          <p>Argentina necesita transformar su rol de granero del mundo a supermercado del mundo. 
-            Desde Pro-Granos, buscamos ayudar a la Argentina en ese camino de transformación 
+          <p>Argentina necesita transformar su rol de granero del mundo a supermercado del mundo.
+            Desde Pro-Granos, buscamos ayudar a la Argentina en ese camino de transformación
             a través de la investigación y la capacitación permanentes.</p>
         </article>
       </article>
     </section>
- 
+
     <section class="listaMetas">
       <section></section>
       <img id="silos" src="./img/silos-y-bolsas-vertical.png" alt="silos-y-bolsas">
       <ul>
-      <h4>METAS</h4>
+        <h4>METAS</h4>
         <li>Desarrollar nuevas tecnologías de conservación de granos y productos derivados para mejorar la
           calidad e inocuidad de los granos argentinos.</li>
         <li>Desarrollar nuevos productos y procesos para aumentar la demanda de cultivos y fomentar el

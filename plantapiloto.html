@@ -8,6 +8,8 @@
   <title>Planta Piloto</title>
   <link rel="icon" type="image/x-icon" href="./img/progranos-cuadrado-transp.png">
   <link rel="stylesheet" href="./styles/plantapiloto.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
@@ -15,18 +17,25 @@
 
 <body>
 
-  <header>
-    <section class="logo">
-      <img src="./img/progranos-cuadrado-transp.png" alt="">
-    </section>
+</header>
+<header id="header">
+  <section v-html="html"></section>
+  <section class="logo">
+    <a id="logo-progranos" href="./index.html"><img src="./img/progranos-cuadrado-transp.png" alt=""></a>
+    <a id="logo-inta" href="./index.html"><img src="./img/logo-inta-chico.jpg" alt=""></a>
+  </section>
 
-    <nav id="navHeader">
-      <a href="./index.html">Home</a>
-      <a href="./plantapiloto.html">Planta Piloto</a>
-      <a href="./capacitacion.html">Capacitación a distancia</a>
-      <a href="./contacto.html">Contacto</a>
-    </nav>
-  </header>
+  <nav id="navHeader">
+    <a href="./plantapiloto.html">Planta Piloto</a>
+    <a href="./capacitacion.html">Capacitación a distancia</a>
+    <a href="./contacto.html">Contacto</a>
+  </nav>
+  
+
+
+
+  
+</header>
 
   <main>
 
