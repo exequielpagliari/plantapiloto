@@ -114,18 +114,20 @@ header a:hover {
   flex-wrap: wrap;
 
   margin: auto;
+  margin-top: 10vh;
 
 
 }
 
 #mapa {
+  display: flex;
   padding: 1rem;
   width: 600px;
   min-width: 15rem;
   height: 280px;
   position: relative;
   overflow: hidden;
-
+  align-items: center;
 
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 
@@ -135,7 +137,7 @@ header a:hover {
 #mapa h3 {
   color: #F2F2F2;
   position: absolute;
-  top: 0%;
+  top: 5%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -153,6 +155,7 @@ header a:hover {
   width: 100%;
   height: 80%
 }
+
 #contactar {
 
 
@@ -227,7 +230,7 @@ header a:hover {
 }
 
 .flex-outer>li>label+* {
-  flex: 1 0 220px;
+  flex: 1 0 190px;
 }
 
 .flex-outer li p {
