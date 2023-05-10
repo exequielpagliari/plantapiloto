@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 ul {
@@ -103,55 +102,132 @@ header a:hover {
   float: center;
   margin-top: -120px;
   object-fit: cover;
-  border-radius: 0 0 50px 50px;
+
 }
 
 
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 
+}
 
 #quienessomos {
   background-color: rgba(3, 140, 90, .80);
-  width: 90%;
-position: relative;
-float: center;
-margin-left: auto;
-margin-right: auto;
-margin-top: -40px;
+  border-radius: 10px;
+
+
 
 
 }
 
 #quienessomos .container {
   text-align: center;
-  padding: 200px 12px;
   display: flex;
 
 
 }
 
 #contactar {
+  margin: 1rem;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-content: center;
-  height: 350px;
+  height: 90vh;
+  margin: auto;
+  margin-top: 5rem;
+  background-color: #038C5A;
 }
 
 
 
 #contactar .container {
-  width: 50%;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  text-align: center;
+
+  background-color: #02734A;
+}
+
+
+
+#container {
+
+  width: 80%;
+
+  margin: 0 auto;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
 
 }
 
-#img-container{
+.flex-outer {
+  margin: 20px;
 
-  width: 100%;
+
 }
+
+.flex-outer li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+
+.flex-outer>li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+
+
+
+  text-transform: uppercase;
+}
+
+.flex-outer>li>label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer>li>label+*{
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+
 
 /*
 .center{
@@ -236,8 +312,10 @@ margin-top: -40px;
 .mapa {
   display: flex;
   flex-direction: column;
+  max-width: 80%;
+  min-width: 200px;
   align-items: center;
-  background: rgb(237, 236, 236);
+  background: #F2F2F2;
 }
 
 .mapa h2 {
@@ -370,6 +448,7 @@ footer nav a:focus {
     justify-content: center;
   }
 
+  /*
   #quienessomos.container .img-container {
     background-image: linear-gradient(0deg,
         rgba(0, 0, 0, 0.5),
@@ -379,7 +458,7 @@ footer nav a:focus {
     height: 500px;
     width: 50%;
   }
-
+*/
 }
 
 
