@@ -124,6 +124,7 @@ header a:hover {
     margin-right: auto;
     float: center;
     text-align: justify;
+    font-size: medium;
 
 }
 
@@ -427,6 +428,9 @@ footer nav a:focus {
         margin-left: auto;
         margin-right: auto;
         float: center;
+
+        line-height: 1.5;
+        text-align: justify;
     }
 
     .texto+section {

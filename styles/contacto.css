@@ -108,59 +108,90 @@ header a:hover {
 
 .info {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 80%;
+  flex-wrap: wrap;
 
-}
-
-#quienessomos {
-  background-color: rgba(3, 140, 90, .80);
-  border-radius: 10px;
-
-
-
-
-}
-
-#quienessomos .container {
-  text-align: center;
-  display: flex;
-
-
-}
-
-#contactar {
-  margin: 1rem;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-content: center;
-  height: 90vh;
   margin: auto;
-  margin-top: 5rem;
-  background-color: #038C5A;
+
+
+}
+
+#mapa {
+  padding: 1rem;
+  width: 600px;
+  min-width: 15rem;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+
+
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
+
+}
+
+#mapa h3 {
+  color: #F2F2F2;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
 }
 
 
 
-#contactar .container {
+#mapa iframe{
+  position: absolute;
+  top: 20%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 80%
+}
+#contactar {
+
+
   margin: 1rem;
+  margin-top: 5rem;
+  color: #F2F2F2;
+  font-size: medium;
+
+}
+
+
+
+
+
+.container {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  border-radius: 1rem;
+  background-color: #038C5A;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 
-  background-color: #02734A;
 }
 
 
 
-#container {
+#containerform {
 
-  width: 80%;
 
-  margin: 0 auto;
+  justify-self: center;
+  margin: auto;
+  margin-right: 5%;
+}
+
+.container h3 {
+
+  margin: 1rem;
 }
 
 .flex-outer,
@@ -180,21 +211,14 @@ header a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
 }
-
-
 
 .flex-outer>li:not(:last-child) {
   margin-bottom: 20px;
+
 }
 
-.flex-outer li label,
-.flex-outer li p {
-
-
-
-  text-transform: uppercase;
-}
 
 .flex-outer>li>label,
 .flex-outer li p {
@@ -202,7 +226,7 @@ header a:hover {
   max-width: 220px;
 }
 
-.flex-outer>li>label+*{
+.flex-outer>li>label+* {
   flex: 1 0 220px;
 }
 
@@ -210,17 +234,18 @@ header a:hover {
   margin: 0;
 }
 
-.flex-outer li input:not([type='checkbox']),
+.flex-outer li input,
 .flex-outer li textarea {
   padding: 15px;
   border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-.flex-outer li button {
+.flex-outer li #boton {
   margin-left: auto;
   padding: 8px 16px;
   border: none;
-  background: #333;
+  background: #02734A;
   color: #f2f2f2;
   text-transform: uppercase;
   letter-spacing: .09em;
@@ -229,100 +254,8 @@ header a:hover {
 
 
 
-/*
-.center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.center .card{
-    position: relative;
-    width: 350px;
-    height: 190px;
-    background: #eaeaea;
-    border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
-    transition: 0.5s;
 
-}
-
-.card:hover{
-    height: 450px;
-}
-
-.imgbx{
-    position: absolute;
-    left: 50%;
-    top: -50%;
-    transform: translateX(-50%);
-    width: 150px;
-    height: 150px;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-.card:hover .imgbx{
-    width: 250px;
-    height: 250px;
-}
-
-.imgbx img{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card .content{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.card .content .details{
-    padding: 40px;
-    text-align: center;
-    width: 100%;
-    transition: 0.5s;
-}
-
-.card .content .details h2{
-    font-size: 1.25em;
-    font-weight: 600;
-    color: #555;
-    line-height: 1.2em;
-
-}
-
-.card .content .details h2 span{
-    font-size: 0.75em;
-    font-weight: 500;
-    opacity: 0.5;
-} */
-
-.mapa {
-  display: flex;
-  flex-direction: column;
-  max-width: 80%;
-  min-width: 200px;
-  align-items: center;
-  background: #F2F2F2;
-}
-
-.mapa h2 {
-  font-size: 2em;
-  color: #555;
-  text-align: center;
-}
 
 /*        Footer            */
 
