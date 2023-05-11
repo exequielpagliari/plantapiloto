@@ -24,8 +24,5 @@ if (cantPosc < 0) {cantPosc = 2}
 else if (cantPosc > 2) {cantPosc = 0};
 operacion = cantPosc * -cantidadImagenesCarruselPorcentural;
 newPosc.style.transform = `translateX(${ operacion }%)`;
-console.log(posc);
-console.log(posc.length);
-console.log(newPosc);
-console.log(operacion);
+
 }

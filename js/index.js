@@ -5,9 +5,7 @@ var posc = document.querySelector(".articulo");
 var newPosc = document.querySelector(".slide");
 var cantPosc = 0;
 var operacion = 0;
-console.log(posc);
-console.log(posc.length);
-console.log(newPosc);
+
 
 
 nextButton.addEventListener("click", () => {
