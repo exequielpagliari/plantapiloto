@@ -313,6 +313,8 @@ body {
         min-width: 50%;
         list-style: decimal;
         color: #F2F2F2;
+        padding: 1.5rem;
+        text-align: justify;
     }
 
 
@@ -335,6 +337,7 @@ body {
         width: 75%;
         list-style: decimal;
         color: #F2F2F2;
+        
     }
 }
 
