@@ -68,9 +68,24 @@ footer nav a .rrss {
     margin-top: 2rem;
 }
 
+
+
+
 i {
     font-size: 1.5rem;
     color: #f2f2f2;
+}
+
+#iFacebook:hover{
+    color: #4267B2
+}
+
+#iMail:hover{
+    color: #02734A
+}
+
+#iLinkedin:hover{
+    color: #0e76a8
 }
 
 footer nav a:hover {
