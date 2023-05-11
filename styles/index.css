@@ -158,15 +158,15 @@ main {
 .info {
     display: flex;
     flex-wrap: wrap;
+    border: solid 2px blue;
     /*align-items: flex-start;*/
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     /*flex-direction: row;*/
     position: relative;
     float: center;
     justify-content: center;
-
-}
+    }
 
 .info h2 {
     text-align: center;
@@ -177,13 +177,15 @@ main {
 .blog {
     display: flex;
     height: auto;
-    margin: auto;
-    margin-bottom: 5%;
+   /*margin:auto;*/
+    border: solid 2px red;
+    /*margin-bottom: 5%;
     margin-left: 1%;
-    margin-right: 1%;
+    margin-right: 1rem;*/
+    padding:10px;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 600px;
+    max-width: 700px;
     column-gap: 10px;
 
 
@@ -194,18 +196,19 @@ main {
     flex-direction: column;
     height: auto;
     min-width: 250px;
-    padding: 4%;
-    margin: 2.5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-
-
+    padding: 0;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    background-color: #F2F2F2;
+    
 
 }
 
 .blog h4 {
     text-align: left;
     margin: 1rem;
-    color: #F2F2F2;
+    color: #02734A;
 }
 
 
@@ -213,26 +216,29 @@ main {
     height: auto;
     width: 100%;
     object-fit: cover;
-    border: 2.5px solid #1B8CA6;
+    border-bottom: 2.5px solid #1B8CA6;
+    border-radius: 1rem 1rem 0 0;
 
 }
 
 .blog p {
     text-align: left;
-    margin: 0 auto;
+    margin: 1rem;
     padding: 0;
-    color: #F2F2F2;
+    color: black;
+    background-color: #F2F2F2;
     font-size: smaller;
 }
 
 .calendario {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    margin-bottom: 2.5%;
+    border: solid 2px black;
+    padding: 0 10px;
+    margin: 0 auto;
     align-items: flex-start;
     align-content: space-between;
-    row-gap: 10px;
+    row-gap: 20px;
 
 }
 
@@ -244,32 +250,33 @@ main {
 
 .calendario article h3 {
     text-align: center;
-    margin: 2.5%;
-    color: #f2f2f2;
-
-
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #02734A;
+    color: #F2F2F2;
 }
 
 .calendario article {
     display: flex;
     flex-direction: row;
-    height: 100px;
-    width: 90%;
+    border: solid 2px green;    
+    background-color: #1B8CA6;
+    align-content: space-between;
+    row-gap: 10px;
+    height: 105px;
+    width: 100%;
     justify-items: center;
     align-items: center;
-
-    margin: 1rem;
-    margin-top: 5%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    /*margin-top: 8%;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
-    padding: 0;
-
+    /*padding: 10px;*/
     object-fit: cover;
-    background-color: #02734A;
     overflow: hidden;
-    color: #F2F2F2;
-
-
+    color: black;
+    
 }
 
 .calendario article img {
@@ -283,12 +290,34 @@ main {
 #calenNumber {
     width: 6rem;
     text-align: center;
-
+    background-color: #02734A;
+    border: solid 2px orange;
 }
 
-#calenText {
+#calenNumber h3{
+    width: 6rem;
+    text-align: center;
+    background-color:#F2F2F2;
+    color: #1B8CA6;
+    padding:0 ;
+}
+
+#calenNumber h4{
+    width: 6rem;
+    text-align: center;
+    background-color: #F2F2F2;
+    color: #1B8CA6;
+    padding: 0px;
+}
+#calenText h4{
     width: auto;
-}
+    padding: 20px;
+     }
+
+#calenText h4{
+    width: auto;
+    padding-left: 10px;
+         }
 
 
 .tag {
@@ -320,9 +349,6 @@ article {
     background-color: #02734A;
     overflow: hidden;
     color: #F2F2F2;
-
-
-
 }
 
 article img {
@@ -394,8 +420,8 @@ article a {
 
     .blog article {
 
-        margin: 1rem;
-        margin-bottom: 1rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
 
     }
 
