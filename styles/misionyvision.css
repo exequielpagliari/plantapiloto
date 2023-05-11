@@ -144,7 +144,6 @@ body {
 
 .listaMetas {
     display: flex;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -158,10 +157,15 @@ body {
     border-radius: 2rem;
     float: center;
     position: relative;
-
+    
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+
+.listaMetas h4{
+    text-align: center;
+
 }
 
 #silos {
@@ -195,6 +199,7 @@ body {
     width: 100%;
     list-style: decimal;
     color: #F2F2F2;
+    padding: 0;
 }
 
 .listaMetas li {
