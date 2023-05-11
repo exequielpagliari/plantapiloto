@@ -228,11 +228,12 @@ main {
 .calendario {
     display: flex;
     flex-direction: column;
-    margin: auto;
+
     margin-bottom: 2.5%;
     align-items: flex-start;
-    align-content: space-between;
+    align-content: space-around;
     row-gap: 10px;
+    height: 100%;
 
 }
 
