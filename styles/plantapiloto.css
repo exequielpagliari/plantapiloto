@@ -49,13 +49,11 @@
   text-align: justify;
   margin: 1rem auto;
   max-width: 80%;
-  background-color: #1B8CA6;
-  color:white;
+  color: darkslategray;
   font-size: 20px;
-  padding: 2rem;
   animation: fadein 2s;
-  border-radius: 2rem;
-}
+  padding-top: 10px;
+  }
 
 @keyframes fadein {
   from { opacity: 0; }
@@ -68,7 +66,7 @@
   text-align: justify;
   margin: 1rem auto;
   max-width: 80%;
-  color:black;
+  color:darkslategray;
   font-size: 18px;
   }
 
@@ -77,12 +75,20 @@
 .listas{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  max-width: 80%;
-  margin: 0 auto; 
-  }
+  grid-gap: 20px;
+  max-width: 60%;
+  margin: 0 auto;
+  background-color: #1B8CA6; 
+  border-radius: 1rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  color: #F2F2F2;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
 
-#tabla1 ul {
+/*#tabla1 ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -106,7 +112,7 @@
     padding: 10px;
     border-radius: 5px;
     align-items: center;
-  }
+  }*/
 
   
 /*Carrusel*/
@@ -115,7 +121,7 @@
   margin-top: 1rem;
   border: #F2F2F2 10px solid;
   border-radius: 10px;
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   float: center;

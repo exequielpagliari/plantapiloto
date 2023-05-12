@@ -3,8 +3,7 @@
     margin: 0;
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
-
-}
+    }
 
 ul {
     list-style: none;
@@ -13,13 +12,7 @@ ul {
 body {
     margin: auto;
     background-color: #F2F2F2;
-
 }
-
-
-
-
-
 
 main {
     margin-top: 0%;
@@ -131,13 +124,15 @@ main {
     text-align: center;
 }
 
-.banner h5 {
+.banner h3 {
     text-align: center;
+    color: #F2F2F2;
 
 }
 
 .banner p {
     padding: 5%;
+    color: #F2F2F2;
 }
 
 /* Caption text */
@@ -180,8 +175,6 @@ main {
     justify-content: space-between;
     max-width: 700px;
     column-gap: 10px;
-
-
 }
 
 .blog article {
@@ -194,6 +187,7 @@ main {
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
     background-color: #F2F2F2;
+    color: #25383C; 
     
 
 }
@@ -218,7 +212,7 @@ main {
     text-align: left;
     margin: 1rem;
     padding: 0;
-    color: black;
+    color: #25383C; 
     background-color: #F2F2F2;
     font-size: smaller;
 }
@@ -266,7 +260,7 @@ main {
     /*padding: 10px;*/
     object-fit: cover;
     overflow: hidden;
-    color: black;
+    color: #25383C; 
     
 }
 
@@ -305,12 +299,13 @@ main {
 #calenText h4{
     width: auto;
     padding: 20px;
-    color: black;
+    color: #25383C; 
     }
 
 #calenText p{
     width: auto;
     text-align: left;
+    color: #25383C;
     }
 
 
@@ -356,13 +351,9 @@ article img {
 
 article a {
     text-decoration: none;
-    color: black;
+    color: #25383C; 
 
 }
-
-
-
-
 
 /* Ajuste de Pantalla menor a 720px */
 
@@ -401,7 +392,7 @@ article a {
         left: 20%;
         background-color: rgba(27, 140, 166, 0.65);
         border-radius: 20px;
-    }
+        }
 
 
 
