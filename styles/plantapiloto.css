@@ -25,7 +25,7 @@
 
 .imagen{
   border: #F2F2F2 10px solid;
-  border-radius: 10px;
+  border-radius: 1rem;
   display: block;
   width: 70%;
   height: auto;
