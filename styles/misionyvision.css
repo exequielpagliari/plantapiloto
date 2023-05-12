@@ -30,7 +30,7 @@ body {
   
   .center {
     border: #F2F2F2 10px solid;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -66,19 +66,19 @@ body {
 }*/
 
 .texto {
-    width: 60%;
+    width: 50%;
     position: relative;
-    top: -180px;
-    left: 0%;
+    top: -150px;
+    left: 25%;
     z-index: 20;
     /*border-radius: 20px;*/
     text-align: center;
     color: #F2F2F2;
 }
-.texto+section {
+/*.texto {
     margin-top: 25px;
     margin-bottom: 10%;
-}
+}*/
 
 /*#misionVision {
     display: flex;
@@ -180,26 +180,16 @@ body {
     transition: all 2.25s;
 }
 
-
-
 .tag.visible {
     opacity: 1;
     transform: translate(0, 0);
-}
-
-
-@media (max-width: 900px) {
-    #misionVision h4 {
-        text-align: center;
-        padding: 1rem 2rem 0 2rem;
-    }
 }
 
 @media (max-width: 720px) {
     
     .accordion {
       grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto;
+      grid-template-rows: 3; 
     }
   
     #panel-1 {
@@ -207,7 +197,7 @@ body {
       grid-column: 1;
     }
   
-    .#panel-2{
+    #panel-2{
       grid-row: 2;
       grid-column: 1;
     }
@@ -218,113 +208,16 @@ body {
     }
   }
   
-
-
-/*@media (max-width: 768px) {
-
-    /*para vista del acordeón en tablet
-    .accordion {
-        max-width: 90%;
-    }
-
-    .accordion {
-        grid-template-columns: 1fr;
-    }
-}*/
-
-@media (min-width: 720px) {
-
-
-    .line {
-        margin-top: 5%;
-        width: 50%;
-        margin-left: 25%;
-        height: 5px;
-        background-color: #02734A;
-        margin-bottom: 0;
-    }
+@media (max-width: 1100px) {
 
     .texto {
-        margin-top: 25px;
         width: 50%;
-        margin-bottom: 25px;
-        margin-left: auto;
-        margin-right: auto;
-        float: center;
-
-        line-height: 1.5;
+        position: relative;
+        top: 0px;
+        left: 25%;
+        z-index: 20;
         text-align: justify;
+        color: #1B8CA6;
+        padding-bottom: 10px;
     }
-
-    .texto+section {
-        margin-top: 25px;
-        margin-bottom: 5%;
-    }
-
-
-    /*.listaMetas {
-        flex-direction: row;
-        height: 720px;
-        max-width: 900px;
-
-    }
-    .listaMetas ul {
-        max-width: 374px;
-        min-width: 50%;
-        list-style: decimal;
-        colo;
-    }
-
-
-    /*#silos {
-        margin-top: 0%;
-        width: auto;
-    
-        height: 100%;
-        border-radius: 2rem 0rem 0rem 2rem;
-        object-fit: contain;
-    }
-
-
-@media screen and (min-width:424px) {
-
-
-
-
-    .listaMetas ul {
-        width: 75%;
-        list-style: decimal;
-        color: #F2F2F2;
-    }
-}*/
-
-
-
-
-
-
-
-
-
-/*
-
-Colores nuevos
-
-
-Azul Claro
-#1BA1BF
-
-Azul Oscuro
-#1B8CA6
-
-Verde
-#038C5A
-
-Verde Mas oscuro
-#02734A
-
-Blanco
-#F2F2F2
-
-
-*/
+}
