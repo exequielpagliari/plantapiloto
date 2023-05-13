@@ -47,7 +47,8 @@ function validarFormulario() {
   if (validData  == true){
   form.setAttribute(`onsubmit`, `true`)
   form.setAttribute(`action`, `https://formsubmit.co/exepa@hotmail.com`)
-  form.setAttribute(`method`, `post`)
+  form.setAttribute(`method`, `POST`)
+  form.submit()
 }
 
 }
