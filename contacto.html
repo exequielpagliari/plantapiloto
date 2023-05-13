@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <script src="https://kit.fontawesome.com/3e40217e48.js" crossorigin="anonymous"></script>
+    <script src="./js/contacto.js"></script>
     <link rel="icon" type="image/x-icon" href="./img/progranos-cuadrado-transp.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -51,28 +52,28 @@
             <article class="panel-header">Formulario de Contacto</article>
             <article class="panel-content">
 
-                    <form action="https://formsubmit.co/exepa@hotmail.com" method="post">
+                    <form id="contact-form" action="https://formsubmit.co/exepa@hotmail.com" method="post">
 
                         <section id="containerformadentro"></section>
                         <ul class="flex-outer">
                             <li>
-                                <label id="lfname" for="fname">Nombre</label>
-                                <input type="text" id="fname" name="firstname" placeholder="">
+                                <label for="fname">Nombre</label>
+                                <input id="fname" type="text" name="fname" placeholder="">
                             </li>
 
                             <li>
-                                <label id="llname" for="lname">Apellido</label>
-                                <input id="lname" type="text" id="lname" name="lastname" placeholder="">
+                                <label for="lname">Apellido</label>
+                                <input id="lname" type="text" name="lname" placeholder="">
                             </li>
 
 
                             <li>
-                                <label id="lemail" for="email">E-mail</label>
-                                <input id="email" type="text" id="email" name="email" placeholder="">
+                                <label for="email">E-mail</label>
+                                <input id="email" type="email" name="email" placeholder="">
                             </li>
 
                             <li>
-                                <label id="lsubject" for="subject">Asunto</label>
+                                <label for="subject">Asunto</label>
                                 <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
                             </li>
 
