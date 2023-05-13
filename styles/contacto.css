@@ -229,7 +229,7 @@ body {
 .flex-outer li input,
 .flex-outer li textarea {
   padding: 15px;
-  border: none;
+  border: .001px solid rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
