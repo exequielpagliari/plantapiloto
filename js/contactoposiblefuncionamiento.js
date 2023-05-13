@@ -30,11 +30,11 @@ function validarFormulario() {
     }
 
 
-    for (arroba in email){ arroba == `@` } 
+    if (email.value == "") {
     {
         email.setAttribute('placeholder', "Por favor, ingrese su email");
         email.focus();
-        validData = true
+        validData = false
     }
 
 
