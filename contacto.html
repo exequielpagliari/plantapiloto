@@ -2,104 +2,108 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="origin">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="./styles/contacto.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <script src="https://kit.fontawesome.com/3e40217e48.js" crossorigin="anonymous"></script>
-    <script src="./js/contacto.js"></script>
-    <link rel="icon" type="image/x-icon" href="./img/progranos-cuadrado-transp.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./img/progranos-cuadrado-transp.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="origin">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="./styles/contacto.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <script src="https://kit.fontawesome.com/3e40217e48.js" crossorigin="anonymous"></script>
+  <script src="./js/contacto.js"></script>
+  <link rel="icon" type="image/x-icon" href="./img/progranos-cuadrado-transp.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./img/progranos-cuadrado-transp.png">
 </head>
 
 <body>
-    <header>
-    
-        <section class="logo">
-          <a id="logo-progranos" href="./index.html"><img src="./img/progranos-cuadrado-transp.png" alt=""></a>
-          <a id="logo-inta" href="./index.html"><img src="./img/logo-inta-chico.jpg" alt=""></a>
-        </section>
-    
-        <nav id="navHeader">
-          <a href="./plantapiloto.html">Planta Piloto</a>
-          <a href="./capacitacion.html">Capacitación a distancia</a>
-          <a href="./misionyvision.html">Misión y Visión</a>
-          <a href="./contacto.html">Contacto</a>
-        </nav>
-    
-      </header>
-    <main>
+  <header>
 
-        <h1 id="page_title">Contacto</h1>
-        <img class="center" src="./img/uib-aerea (1).png" alt="uib-aerea">
+    <section class="logo">
+      <a id="logo-progranos" href="./index.html"><img src="./img/progranos-cuadrado-transp.png" alt=""></a>
+      <a id="logo-inta" href="./index.html"><img src="./img/logo-inta-chico.jpg" alt=""></a>
+    </section>
 
-        <section class="accordion tag">
+    <nav id="navHeader">
+      <a href="./plantapiloto.html">Planta Piloto</a>
+      <a href="./capacitacion.html">Capacitación a distancia</a>
+      <a href="./misionyvision.html">Misión y Visión</a>
+      <a href="./contacto.html">Contacto</a>
+    </nav>
 
-          <article class="panel" id="panel-1">
+  </header>
+  <main>
 
-            <article class="panel-content">
-              <p>Comunicate con nosotros para más información de proyectos de investigación,  de transferencias,  cursos a distancias,  consultas técnicas.</p>
-            </article>
-          </article>
-    
-          <article class="panel" id="panel-2">
-            <article class="panel-header">Formulario de Contacto</article>
-            <article class="panel-content">
+    <h1 id="page_title">Contacto</h1>
+    <img class="center" src="./img/uib-aerea (1).png" alt="uib-aerea">
 
-                    <form id="contact-form" action="https://formsubmit.co/exepa@hotmail.com" method="post">
+    <section class="accordion tag">
 
-                        <section id="containerformadentro"></section>
-                        <ul class="flex-outer">
-                            <li>
-                                <label for="fname">Nombre</label>
-                                <input id="fname" type="text" name="fname" placeholder="">
-                            </li>
+      <article class="panel" id="panel-1">
 
-                            <li>
-                                <label for="lname">Apellido</label>
-                                <input id="lname" type="text" name="lname" placeholder="">
-                            </li>
+        <article class="panel-content">
+          <p>Comunicate con nosotros para más información de proyectos de investigación, de transferencias, cursos a
+            distancias, consultas técnicas.</p>
+        </article>
+      </article>
+
+      <article class="panel" id="panel-2">
+        <article class="panel-header">Formulario de Contacto</article>
+        <article class="panel-content">
+
+          <form id="contact-form"  onsubmit="return false">
+
+            <section id="containerformadentro"></section>
+            <ul class="flex-outer">
+              <li>
+                <label for="fname">Nombre</label>
+                <input id="finame" type="text" name="fname" placeholder="">
+              </li>
+
+              <li>
+                <label for="lname">Apellido</label>
+                <input id="lname" type="text" name="lname" placeholder="">
+              </li>
 
 
-                            <li>
-                                <label for="email">E-mail</label>
-                                <input id="email" type="email" name="email" placeholder="">
-                            </li>
+              <li>
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" placeholder="">
+              </li>
 
-                            <li>
-                                <label for="subject">Asunto</label>
-                                <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
-                            </li>
+              <li>
+                <label for="subject">Asunto</label>
+                <textarea id="subject" name="subject" placeholder=""></textarea>
+              </li>
 
-                            <li>
-                                <input id="boton" type="submit" value="Enviar">
+              <li>
+                <button id="boton" type="button" onclick="validarFormulario()">Enviar</button>
 
-                            </li>
-                        </ul>
-                    </form>
-            </article>
-          </article>
-    
-          <article class="panel" id="panel-3">
-            <article class="panel-header">Ubicación</article>
-            <article class="panel-content">
-              <section id="mapa" class="container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.823839371347!2d-58.3086611243941!3d-37.77072857198641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959aa6c9536d7367%3A0xe958c7a5a538dc2!2sINTA%2C%20Agricultural%20Experimental%20Station%20Balcarce!5e0!3m2!1sen!2sar!4v1684106646474!5m2!1sen!2sar" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>                                              
-                </section>
-            </section>
-            </article>
-          </article>
-        </section>
+              </li>
+            </ul>
+          </form>
+        </article>
+      </article>
 
-<!---        <section class="info">
+
+     
+      <article class="panel" id="panel-3">
+        <article class="panel-header">Ubicación</article>
+        <article class="panel-content">
+          <section id="mapa" class="container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d234352.40209354297!2d-60.30236903431845!3d-26.918939974178183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1680352826976!5m2!1ses!2sar"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+    </section>
+    </article>
+    </article>
+    </section>
+
+    <!---        <section class="info">
             <section id="mapa" class="container">
                 <h3>Ubicación</h3>
                 <section>
@@ -152,8 +156,8 @@
 
 
 
-        </section>
-        <footer>
+    </section>
+    <footer>
 
             <section id="footer_info">
               <nav id="footer_links">
@@ -168,9 +172,9 @@
         
         
               <section>
-                <h4>Contactanos</h4>
+                <h4>Contáctanos</h4>
                 <ul>
-                  <li>Ruta 226, km 73,5, Balcarce</li>
+                  <li>Ruta 226, km 73,5. Balcarce</li>
                   <li>Buenos Aires, Argentina</li>
                   <li>02266 43-9100</li>
                 </ul>
@@ -189,7 +193,7 @@
           </footer>
 
 
-        
+
 
 </body>
 
