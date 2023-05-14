@@ -8,7 +8,10 @@
 
 function validarFormulario() {
     const form = document.getElementsByTagName("form")[0]
-
+    let valNom = false
+    let valApe = false
+    let valEma = false
+    let valAsu = false
 
     let validData = false
 
@@ -18,10 +21,10 @@ function validarFormulario() {
         form[0].setAttribute('placeholder', "Por favor, ingrese su nombre");
         form[0].focus();
 
-        validData = false
+        valNom = false
     }
 
-    else {validData = true}
+    else {valNom = true}
 
 
 
@@ -29,30 +32,33 @@ function validarFormulario() {
         form[1].value = ""
         form[1].setAttribute('placeholder', "Por favor, ingrese su apellido");
         form[1].focus();
-        validData = false
+        valApe = false
     }
 
-    else {validData = true}
+    else {valApe = true}
 
-    validarEmail(email)
-    if (form[2].value.length < 2 && !validarEmail(form[2])) {
-        form[2].setAttribute('placeholder', "Por favor, ingrese su email");
-        form[2].focus();
-        validData = false
-    }
 
-    else {validData = true}
 
 
     if (form[3].value.length < 5) {
         subject.setAttribute('placeholder', "Por favor, ingrese su mensaje");
         subject.focus();
-        validData = false
+        valAsu = false
     }
 
-    else {validData = true}
+    else {valAsu = true}
 
-    if (validData == true) {
+
+    validarEmail(email)
+    if (form[2].value.length < 2 && !validarEmail(form[2])) {
+        form[2].setAttribute('placeholder', "Por favor, ingrese su email");
+        form[2].focus();
+        valEma = false
+    }
+
+    else {valEma = true}
+
+    if (valNom &&  valApe && valEma && valEma) {
         form.setAttribute(`onsubmit`, `true`)
         form.setAttribute(`action`, `https://formsubmit.co/exepa@hotmail.com`)
         form.setAttribute(`method`, `POST`)
