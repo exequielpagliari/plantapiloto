@@ -7,48 +7,68 @@
 
 
 function validarFormulario() {
-  const fname = document.getElementById("finame")
-  const lname = document.getElementById("lname");
-  const email = document.getElementById("email");
-  const subject = document.getElementById("subject");
-  const form = document.getElementById("contact-form")
-  let validData = true
+    const form = document.getElementsByTagName("form")[0]
 
 
-  if (fname.value == "") {
-      fname.setAttribute('placeholder', "Por favor, ingrese su nombre");
-      fname.focus();
-      validData = false
-  }
+    let validData = false
+
+
+    if (form[0].value.length < 2) {
+        form[0].value = ""
+        form[0].setAttribute('placeholder', "Por favor, ingrese su nombre");
+        form[0].focus();
+
+        validData = false
+    }
+
+    else {validData = true}
 
 
 
-  if (lname.value == "") {
-      lname.setAttribute('placeholder', "Por favor, ingrese su apellido");
-      lname.focus();
-      validData = false
-  }
+    if (form[1].value.length < 2) {
+        form[1].value = ""
+        form[1].setAttribute('placeholder', "Por favor, ingrese su apellido");
+        form[1].focus();
+        validData = false
+    }
+
+    else {validData = true}
+
+    validarEmail(email)
+    if (form[2].value.length < 2 && !validarEmail(form[2])) {
+        form[2].setAttribute('placeholder', "Por favor, ingrese su email");
+        form[2].focus();
+        validData = false
+    }
+
+    else {validData = true}
 
 
-  if (email.value == "") 
-  {
-      email.setAttribute('placeholder', "Por favor, ingrese su email");
-      email.focus();
-      validData = false
-  }
+    if (form[3].value.length < 5) {
+        subject.setAttribute('placeholder', "Por favor, ingrese su mensaje");
+        subject.focus();
+        validData = false
+    }
+
+    else {validData = true}
+
+    if (validData == true) {
+        form.setAttribute(`onsubmit`, `true`)
+        form.setAttribute(`action`, `https://formsubmit.co/exepa@hotmail.com`)
+        form.setAttribute(`method`, `POST`)
+        form.submit()
+    }
 
 
-  if (subject.value == "") {
-      subject.setAttribute('placeholder', "Por favor, ingrese su mensaje");
-      subject.focus();
-      validData = false
-  }
 
-  if (validData  == true){
-  form.setAttribute(`onsubmit`, `true`)
-  form.setAttribute(`action`, `https://formsubmit.co/exepa@hotmail.com`)
-  form.setAttribute(`method`, `POST`)
-  form.submit()
-}
+
+    function validarEmail(email) {
+        console.log("Entro acá")
+        console.log(email.value)
+        const expresion = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        console.log(expresion.test(email.value))
+        return expresion.test(email);
+
+    }
 
 }
