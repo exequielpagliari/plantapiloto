@@ -47,6 +47,8 @@ body {
 
 }
 
+/*Layout de mapa y formulario*/
+
 .accordion {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -104,6 +106,7 @@ body {
     
   }
 
+  
 .metas {
     color:#25383C;
     ;
@@ -120,6 +123,7 @@ body {
   margin: auto;
   margin-top: 10vh;
 }
+
 
 #mapa{
   margin: 0;
