@@ -180,6 +180,23 @@
 
       </section>
     </section>
+
+    <!---
+    <div class="flotante" id="app">
+      <section id="flecha">
+      <button class="slide-arrow" id="slide-arrow-next">
+        &#8250;
+      </button>
+    </section>
+    <section id="data">
+      <h4>{{pais}}</h4>
+      <h4>{{localidad}}</h4>
+      <h4>{{provincia}}</h4>
+      <h4>{{fechaYHora}}</h4>
+    </section>
+  </div>
+
+  -->
   </main>
 
   <footer>
@@ -211,12 +228,20 @@
       </section>
     </section>
 
+
+
     <section id="copyright">
       <p>2023 - Todos los Derechos Reservados. Las marcas y logos de INTA.</p>
+      <div id="app">
+      <p>En {{localidad}}, {{provincia}}, {{pais}}, hoy es {{fecha}} y la hora es {{hora}}</p>
+    </div>
     </section>
+  </div>
+
+
 
   </footer>
-
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="./js/index.js"></script>
 </body>
 

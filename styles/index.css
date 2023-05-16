@@ -355,6 +355,30 @@ article a {
 
 }
 
+/*
+.flotante{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 25vh;
+    width: 25vh;
+    height: 25vh;
+    left: 0vh;
+
+}
+
+.flotante #data{
+    background-color: yellow;
+}
+
+.flotante #flecha{
+    width: 5vh
+}
+
+.flotante #slide-arrow-next{
+    right: 0;
+}
+*/
 /* Ajuste de Pantalla menor a 720px */
 
 @media (min-width: 720px) {
