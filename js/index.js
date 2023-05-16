@@ -49,7 +49,7 @@ const app = Vue.createApp({
 se debe crear en data() aquello que va a ser modificado.*/
   created(){
 
-      fetch("http://api.weatherstack.com/current?access_key=3735a5a615e74cfaf1a5998e1ad06d43&query=fetch:ip")
+      fetch("https://api.weatherapi.com/v1/forecast.json?key=c33e497f840b4b23914120535231605&q=auto:ip&days=1&aqi=yes&alerts=yes")
       .then(res => res.json())
       .then(data => {
           console.log(data);
