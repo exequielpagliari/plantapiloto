@@ -25,3 +25,46 @@ else if (cantPosc > 4) {cantPosc = 0};
 operacion = cantPosc * -20;
 newPosc.style.transform = `translateX(${ operacion }%)`;
 }
+
+
+
+
+/* Contruccion del VUE*/
+
+
+
+const app = Vue.createApp({
+  data(){
+      return{
+        pais: "PAIS",
+        localidad: "LOCALIDAD",
+        provincia: "PROVINCIA",
+        fechaYHora: "FECHAYHORA" 
+      }
+  },
+/*Cuando ubicamos el módulo de comunicación
+se debe crear en data() aquello que va a ser modificado.*/
+  created(){
+      /*
+      fetch("http://api.weatherstack.com/current?access_key=3735a5a615e74cfaf1a5998e1ad06d43&query=fetch:ip")
+      .then(res => res.json())
+      .then(data => {
+          console.log(data);
+          console.log(data.location.country)
+          console.log(data.location.name)
+          console.log(data.location.region)
+          console.log(data.location.localtime)
+
+          this.pais = data.location.country
+          this.localidad = data.location.name
+          this.provincia = data.location.region
+          this.fechaYHora = data.location.localtime
+
+      })
+
+      .catch(err => console.log(err))
+*/
+  }
+
+}).mount("#app")
+
