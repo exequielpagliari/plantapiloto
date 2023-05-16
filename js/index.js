@@ -37,15 +37,18 @@ const app = Vue.createApp({
   data(){
       return{
         pais: "PAIS",
-        localidad: "LOCALIDAD",
-        provincia: "PROVINCIA",
-        fechaYHora: "FECHAYHORA" 
+        localidad: "",
+        provincia: "",
+        fechaYHora: "",
+        fecha:"",
+        hora:""
+
       }
   },
 /*Cuando ubicamos el módulo de comunicación
 se debe crear en data() aquello que va a ser modificado.*/
   created(){
-      /*
+
       fetch("http://api.weatherstack.com/current?access_key=3735a5a615e74cfaf1a5998e1ad06d43&query=fetch:ip")
       .then(res => res.json())
       .then(data => {
@@ -59,11 +62,13 @@ se debe crear en data() aquello que va a ser modificado.*/
           this.localidad = data.location.name
           this.provincia = data.location.region
           this.fechaYHora = data.location.localtime
+          this.fecha= ` ${data.location.localtime.slice(0,11)}`,
+          this.hora= ` ${data.location.localtime.slice(11,16)}`
 
       })
 
       .catch(err => console.log(err))
-*/
+
   }
 
 }).mount("#app")
