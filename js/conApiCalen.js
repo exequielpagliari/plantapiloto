@@ -24,12 +24,6 @@ se debe crear en data() aquello que va a ser modificado.*/
       fetch("https://api.weatherapi.com/v1/forecast.json?key=c33e497f840b4b23914120535231605&q=auto:ip&days=1&aqi=yes&alerts=yes")
       .then(res => res.json())
       .then(data => {
-          console.log(data);
-          console.log(data.location.country)
-          console.log(data.location.name)
-          console.log(data.location.region)
-          console.log(data.location.localtime)
-
           this.pais = data.location.country
           this.localidad = data.location.name
           this.provincia = data.location.region
