@@ -190,6 +190,14 @@ p {
   line-height: 1.5;
   }
 
+.div {
+  margin: 0;
+  padding: 0;
+}
+
+footer section p {
+  margin: 0;
+}
 @media (max-width: 768px) { /*para vista del acordeón en celular*/
     .accordion {
       max-width: 90%;

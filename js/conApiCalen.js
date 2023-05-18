@@ -1,36 +1,48 @@
-<article>
-          <section id="calenNumber">
-            <h3>2</h3>
-            <h4>Mayo</h4>
-          </section>
-          
-          <section id="calnText">
-            <a href="./docs/aireacion.pdf", target="_blank"><h4>Curso: "Aireación de granos" </h4></a>
-            <p>Inicia el curso a distancia del PRO-GRANOS.</p>
-          </section>
-        
-        </article>
+/* Contruccion del VUE*/
 
-        <article>
-          <section id="calenNumber">
-            <h3>29</h3>
-            <h4>Mayo</h4>
-          </section>
-          
-          <section id="calnText">
-            <a href="./docs/insectos.pdf", target="_blank"><h4>Curso: "Control de Plagas e Inocuidad"</h4></a>
-            <p>Inicia el curso a distancia del PRO-GRANOS.</p>
-          </section>
-        </article>
 
-        <article>
-          <section id="calenNumber">
-            <h3>7</h3>
-            <h4>Junio</h4>
-          </section>
-          <section id="calnText">
-            <a href= "https://www.graintrade.org.au/conferences-events/australian-grain-storage-protection-conference-2023", 
-            target="_blank"><h4>NWPGP 2023</h4></a>
-            <p>Inicia la "Australian Grain Storage & Protection Conference".</p>
-          </section>
-        </article>
+
+const app = Vue.createApp({
+  data(){
+      return{
+        pais: "",
+        localidad: "",
+        provincia: "",
+        fechaYHora: "",
+        fecha:"",
+        hora:"",
+        dia: "",
+        mes: "",
+        anio:""
+
+      }
+  },
+/*Cuando ubicamos el módulo de comunicación
+se debe crear en data() aquello que va a ser modificado.*/
+  created(){
+
+      fetch("https://api.weatherapi.com/v1/forecast.json?key=c33e497f840b4b23914120535231605&q=auto:ip&days=1&aqi=yes&alerts=yes")
+      .then(res => res.json())
+      .then(data => {
+          console.log(data);
+          console.log(data.location.country)
+          console.log(data.location.name)
+          console.log(data.location.region)
+          console.log(data.location.localtime)
+
+          this.pais = data.location.country
+          this.localidad = data.location.name
+          this.provincia = data.location.region
+          this.fechaYHora = data.location.localtime
+          this.fecha= ` ${data.location.localtime.slice(0,11)}`,
+          this.hora= ` ${data.location.localtime.slice(11,16)}`,
+          this.dia=  `${data.location.localtime.slice(8,10)}`,
+          this.mes= `${data.location.localtime.slice(5,7)}`,
+          this.anio= `${data.location.localtime.slice(0,4)}`
+      })
+
+      .catch(err => console.log(err))
+
+  }
+
+}).mount("#app")
