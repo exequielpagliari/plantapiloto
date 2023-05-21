@@ -272,29 +272,35 @@ main {
     overflow: hidden;*/
 
 
+
+
 #calenNumber {
     width: 100px;
     height: 100px;
     background-color: #F2F2F2;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
 
 #calenNumber h3{
-    width: 100px; 
+    width: 50px; 
     text-align: center;
     background-color:#F2F2F2;
     color: #1B8CA6;
     font-weight: bold;
     font-size: xx-large;
-    padding: 14px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 #calenNumber h4{
-    width: 100px;
+    width: 50px;
     text-align: center;
     background-color: #F2F2F2;
     color: #1B8CA6;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 #calenText h4{
     width: auto;
