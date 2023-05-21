@@ -9,6 +9,14 @@ header {
 	background-color: white;
 }
 
+label{
+	height: 98px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 5%;
+}
+
 .nav__toggle {
 	position: absolute;
 	cursor: pointer;
